@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-03-24T20:45:20.794Z",
-  "sourceUpdatedAt": "2026-03-24T20:19:26.382Z",
+  "updatedAt": "2026-03-24T21:35:06.115Z",
+  "sourceUpdatedAt": "2026-03-24T21:19:22.690Z",
   "status": "ok",
   "count": 73,
   "items": [
@@ -42,7 +42,7 @@
       "endTime": "20:15",
       "product": "Sauna Gus (HEAT & BEATS) - Horizon",
       "gusmester": "Maria Fagranes Clemmensen",
-      "availability": 12
+      "availability": 10
     },
     {
       "date": "2026-03-28",
