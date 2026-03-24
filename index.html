@@ -70,12 +70,14 @@
       box-shadow: 0 2px 16px rgba(0,0,0,0.07);
     }
 
+    /* ── Filters row ── */
     .filters-row {
       display: grid;
-      grid-template-columns: 1fr 1fr auto;
+      grid-template-columns: 1fr 1fr 1fr auto;
       gap: 1rem;
       align-items: end;
     }
+    .filter-group { position: relative; }
     .filter-group label {
       display: block;
       font-size: 0.68rem;
@@ -102,6 +104,130 @@
       transition: border-color 0.15s;
     }
     select:focus { outline: none; border-color: var(--forest); }
+
+    /* ── Date trigger button (looks like a select) ── */
+    .date-trigger {
+      width: 100%;
+      padding: 0.6rem 2.2rem 0.6rem 0.9rem;
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      font-size: 0.9rem;
+      font-family: inherit;
+      background-color: var(--surface-alt);
+      color: var(--muted);
+      text-align: left;
+      cursor: pointer;
+      transition: border-color 0.15s;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236b6660' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.85rem center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .date-trigger:focus { outline: none; border-color: var(--forest); }
+    .date-trigger.open,
+    .date-trigger:hover { border-color: var(--forest); }
+    .date-trigger.has-date { color: var(--text); font-weight: 500; background-color: var(--sage-light); border-color: var(--sage); }
+
+    /* ── Calendar dropdown ── */
+    .cal-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 6px);
+      left: 0;
+      z-index: 100;
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: 14px;
+      padding: 1rem;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+      width: 280px;
+    }
+    .cal-dropdown.open { display: block; }
+
+    .cal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.75rem;
+    }
+    .cal-month-title { font-weight: 600; font-size: 0.88rem; }
+    .cal-nav { display: flex; gap: 0.3rem; }
+    .cal-nav button {
+      width: 28px; height: 28px;
+      border: 1.5px solid var(--border);
+      border-radius: 7px;
+      background: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text);
+      transition: all 0.15s;
+      font-size: 0.8rem;
+    }
+    .cal-nav button:hover { background: var(--sage-light); border-color: var(--sage); }
+
+    .cal-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 2px;
+    }
+    .cal-day-name {
+      text-align: center;
+      font-size: 0.58rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding: 0.2rem 0 0.35rem;
+    }
+    .cal-day {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2px;
+      aspect-ratio: 1;
+      border-radius: 7px;
+      font-size: 0.78rem;
+      cursor: default;
+      transition: background 0.12s, color 0.12s;
+      color: var(--border);
+      user-select: none;
+    }
+    .cal-day.in-month     { color: var(--muted); }
+    .cal-day.past         { color: #c4bfb5; }
+    .cal-day.has-sessions { color: var(--text); font-weight: 500; cursor: pointer; }
+    .cal-day.has-sessions:hover:not(.selected) { background: var(--sage-light); }
+    .cal-day.today:not(.selected) .day-num { text-decoration: underline; text-underline-offset: 2px; }
+    .cal-day.selected     { background: var(--forest) !important; color: #fff !important; }
+    .cal-day .day-num     { line-height: 1; }
+    .cal-day .session-dot { width: 3px; height: 3px; border-radius: 50%; background: var(--sage); flex-shrink: 0; }
+    .cal-day.selected .session-dot { background: rgba(255,255,255,0.55); }
+
+    .cal-footer {
+      margin-top: 0.75rem;
+      padding-top: 0.65rem;
+      border-top: 1px solid var(--border-light);
+      display: flex;
+      justify-content: flex-end;
+    }
+    .btn-clear-date {
+      font-size: 0.76rem;
+      font-family: inherit;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      border: 1.5px solid var(--border);
+      background: none;
+      color: var(--muted);
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .btn-clear-date:hover { background: var(--forest); color: #fff; border-color: var(--forest); }
+
+    /* ── Clear filters button ── */
     .btn-clear {
       padding: 0.6rem 1.4rem;
       background: var(--forest);
@@ -117,107 +243,6 @@
       height: fit-content;
     }
     .btn-clear:hover { background: var(--forest-hover); }
-
-    .cal-section {
-      border-top: 1.5px solid var(--border-light);
-      margin-top: 1.5rem;
-      padding-top: 1.5rem;
-    }
-    .cal-section > .section-label {
-      font-size: 0.68rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 1rem;
-    }
-    .cal-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 0.85rem;
-    }
-    .cal-month-title { font-weight: 600; font-size: 0.95rem; }
-    .cal-nav { display: flex; gap: 0.35rem; }
-    .cal-nav button {
-      width: 32px; height: 32px;
-      border: 1.5px solid var(--border);
-      border-radius: 8px;
-      background: none;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--text);
-      transition: all 0.15s;
-      font-size: 0.85rem;
-    }
-    .cal-nav button:hover { background: var(--sage-light); border-color: var(--sage); }
-    .cal-grid {
-      display: grid;
-      grid-template-columns: repeat(7, 1fr);
-      gap: 3px;
-    }
-    .cal-day-name {
-      text-align: center;
-      font-size: 0.62rem;
-      font-weight: 600;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--muted);
-      padding: 0.25rem 0 0.4rem;
-    }
-    .cal-day {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 2px;
-      aspect-ratio: 1;
-      border-radius: 8px;
-      font-size: 0.82rem;
-      cursor: default;
-      transition: background 0.12s, color 0.12s;
-      color: var(--border);
-      user-select: none;
-      min-width: 0;
-    }
-    .cal-day.in-month     { color: var(--muted); }
-    .cal-day.past         { color: #c4bfb5; }
-    .cal-day.has-sessions { color: var(--text); font-weight: 500; cursor: pointer; }
-    .cal-day.has-sessions:hover:not(.selected) { background: var(--sage-light); }
-    .cal-day.today:not(.selected) .day-num { text-decoration: underline; text-underline-offset: 2px; }
-    .cal-day.selected     { background: var(--forest) !important; color: #fff !important; }
-    .cal-day .day-num     { line-height: 1; }
-    .cal-day .session-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--sage); flex-shrink: 0; }
-    .cal-day.selected .session-dot { background: rgba(255,255,255,0.55); }
-
-    .cal-footer {
-      margin-top: 0.85rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-    }
-    .btn-all-dates {
-      font-size: 0.78rem;
-      font-family: inherit;
-      font-weight: 500;
-      padding: 0.3rem 1rem;
-      border-radius: 999px;
-      border: 1.5px solid var(--border);
-      background: none;
-      color: var(--muted);
-      cursor: pointer;
-      transition: all 0.15s;
-    }
-    .btn-all-dates:hover, .btn-all-dates.active {
-      background: var(--forest);
-      color: #fff;
-      border-color: var(--forest);
-    }
-    .selected-date-label { font-size: 0.82rem; color: var(--muted); }
 
     .divider { border: none; border-top: 1.5px solid var(--border-light); margin: 1.5rem 0 1.25rem; }
 
@@ -263,7 +288,9 @@
     @media (max-width: 640px) {
       header { padding: 2rem 0 1.5rem; }
       .card  { padding: 1.25rem; border-radius: 16px; }
-      .filters-row { grid-template-columns: 1fr; }
+      .filters-row { grid-template-columns: 1fr 1fr; }
+      .filters-row .btn-clear { grid-column: 1 / -1; }
+      .cal-dropdown { width: 100%; }
 
       table, thead, tbody, tr, td, th { display: block; }
       thead { display: none; }
@@ -330,23 +357,27 @@
       <label for="f-product">Product</label>
       <select id="f-product"><option value="">All sessions</option></select>
     </div>
-    <button class="btn-clear" onclick="clearFilters()">Clear filters</button>
-  </div>
 
-  <div class="cal-section">
-    <p class="section-label">Date</p>
-    <div class="cal-header">
-      <span class="cal-month-title" id="cal-month-title">—</span>
-      <div class="cal-nav">
-        <button onclick="prevMonth()" aria-label="Previous month">&#8592;</button>
-        <button onclick="nextMonth()" aria-label="Next month">&#8594;</button>
+    <!-- Date picker -->
+    <div class="filter-group" id="date-group">
+      <label>Date</label>
+      <button class="date-trigger" id="date-trigger" onclick="toggleCal(event)" type="button">All dates</button>
+      <div class="cal-dropdown" id="cal-dropdown">
+        <div class="cal-header">
+          <span class="cal-month-title" id="cal-month-title">—</span>
+          <div class="cal-nav">
+            <button onclick="prevMonth(event)" aria-label="Previous month">&#8592;</button>
+            <button onclick="nextMonth(event)" aria-label="Next month">&#8594;</button>
+          </div>
+        </div>
+        <div class="cal-grid" id="cal-grid"></div>
+        <div class="cal-footer">
+          <button class="btn-clear-date" onclick="clearDate(event)">Clear date</button>
+        </div>
       </div>
     </div>
-    <div class="cal-grid" id="cal-grid"></div>
-    <div class="cal-footer">
-      <button class="btn-all-dates active" id="btn-all-dates" onclick="clearCalendar()">All dates</button>
-      <span class="selected-date-label" id="selected-date-label"></span>
-    </div>
+
+    <button class="btn-clear" onclick="clearFilters()" type="button">Clear filters</button>
   </div>
 
   <hr class="divider">
@@ -383,6 +414,22 @@
   const timeBadge  = document.getElementById("time-badge");
   const fGusmaster = document.getElementById("f-gusmaster");
   const fProduct   = document.getElementById("f-product");
+  const dateTrigger = document.getElementById("date-trigger");
+  const calDropdown = document.getElementById("cal-dropdown");
+
+  // ── Close calendar on outside click ──
+  document.addEventListener("click", e => {
+    if (!document.getElementById("date-group").contains(e.target)) {
+      calDropdown.classList.remove("open");
+      dateTrigger.classList.remove("open");
+    }
+  });
+
+  function toggleCal(e) {
+    e.stopPropagation();
+    const open = calDropdown.classList.toggle("open");
+    dateTrigger.classList.toggle("open", open);
+  }
 
   function toISO(d) {
     return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
@@ -391,8 +438,8 @@
     const d = new Date(iso + "T00:00:00");
     return { day: d.toLocaleDateString("en-GB", { weekday:"short", day:"numeric", month:"short" }), year: d.getFullYear() };
   }
-  function formatDateLong(iso) {
-    return new Date(iso + "T00:00:00").toLocaleDateString("en-GB", { weekday:"long", day:"numeric", month:"long", year:"numeric" });
+  function formatDateShort(iso) {
+    return new Date(iso + "T00:00:00").toLocaleDateString("en-GB", { day:"numeric", month:"short", year:"numeric" });
   }
   function formatUpdated(iso) {
     return new Date(iso).toLocaleString("en-GB", { day:"numeric", month:"short", year:"numeric", hour:"2-digit", minute:"2-digit" });
@@ -417,37 +464,61 @@
   }
   function renderCalendar() {
     document.getElementById("cal-month-title").textContent = `${MONTHS[calMonth]} ${calYear}`;
-    const todayISO = toISO(new Date());
+    const todayISO  = toISO(new Date());
     const todayDate = new Date(); todayDate.setHours(0,0,0,0);
-    const firstDay = new Date(calYear, calMonth, 1);
-    const days = new Date(calYear, calMonth + 1, 0).getDate();
-    const offset = (firstDay.getDay() + 6) % 7;
+    const firstDay  = new Date(calYear, calMonth, 1);
+    const days      = new Date(calYear, calMonth + 1, 0).getDate();
+    const offset    = (firstDay.getDay() + 6) % 7;
     let html = DAYS.map(n => `<div class="cal-day-name">${n}</div>`).join("");
     for (let i = 0; i < offset; i++) html += `<div class="cal-day"></div>`;
     for (let d = 1; d <= days; d++) {
       const date = new Date(calYear, calMonth, d);
       const iso  = toISO(date);
       const cls  = ["cal-day","in-month",
-        date < todayDate       ? "past"         : "",
-        sessionDates.has(iso)  ? "has-sessions" : "",
-        iso === todayISO       ? "today"         : "",
-        iso === selectedDate   ? "selected"      : ""
+        date < todayDate      ? "past"         : "",
+        sessionDates.has(iso) ? "has-sessions" : "",
+        iso === todayISO      ? "today"         : "",
+        iso === selectedDate  ? "selected"      : ""
       ].filter(Boolean).join(" ");
       const dot = sessionDates.has(iso) ? `<div class="session-dot"></div>` : "";
-      const oc  = sessionDates.has(iso) ? `onclick="selectDate('${iso}')"` : "";
+      const oc  = sessionDates.has(iso) ? `onclick="selectDate(event,'${iso}')"` : "";
       html += `<div class="${cls}" ${oc}><span class="day-num">${d}</span>${dot}</div>`;
     }
     document.getElementById("cal-grid").innerHTML = html;
   }
-  function prevMonth() { if (--calMonth < 0)  { calMonth = 11; calYear--; } renderCalendar(); }
-  function nextMonth() { if (++calMonth > 11) { calMonth = 0;  calYear++; } renderCalendar(); }
-  function selectDate(iso) { selectedDate = selectedDate === iso ? null : iso; renderCalendar(); updateCalFooter(); render(); }
-  function clearCalendar() { selectedDate = null; renderCalendar(); updateCalFooter(); render(); }
-  function updateCalFooter() {
-    const btn = document.getElementById("btn-all-dates");
-    const lbl = document.getElementById("selected-date-label");
-    if (selectedDate) { btn.classList.remove("active"); lbl.textContent = formatDateLong(selectedDate); }
-    else              { btn.classList.add("active");    lbl.textContent = ""; }
+  function prevMonth(e) { e.stopPropagation(); if (--calMonth < 0)  { calMonth = 11; calYear--; } renderCalendar(); }
+  function nextMonth(e) { e.stopPropagation(); if (++calMonth > 11) { calMonth = 0;  calYear++; } renderCalendar(); }
+
+  function selectDate(e, iso) {
+    e.stopPropagation();
+    selectedDate = selectedDate === iso ? null : iso;
+    renderCalendar();
+    updateTrigger();
+    render();
+    if (selectedDate) {
+      calDropdown.classList.remove("open");
+      dateTrigger.classList.remove("open");
+    }
+  }
+
+  function clearDate(e) {
+    e.stopPropagation();
+    selectedDate = null;
+    renderCalendar();
+    updateTrigger();
+    render();
+    calDropdown.classList.remove("open");
+    dateTrigger.classList.remove("open");
+  }
+
+  function updateTrigger() {
+    if (selectedDate) {
+      dateTrigger.textContent = formatDateShort(selectedDate);
+      dateTrigger.classList.add("has-date");
+    } else {
+      dateTrigger.textContent = "All dates";
+      dateTrigger.classList.remove("has-date");
+    }
   }
 
   function render() {
@@ -472,7 +543,14 @@
     }).join("");
   }
 
-  function clearFilters() { fGusmaster.value = ""; fProduct.value = ""; clearCalendar(); }
+  function clearFilters() {
+    fGusmaster.value = "";
+    fProduct.value   = "";
+    selectedDate     = null;
+    renderCalendar();
+    updateTrigger();
+    render();
+  }
   fGusmaster.addEventListener("change", render);
   fProduct.addEventListener("change", render);
 
