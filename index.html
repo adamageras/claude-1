@@ -4,178 +4,311 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Find your next sauna session – Winter Island</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
   <style>
+    :root {
+      --bg:           #ede8dc;
+      --surface:      #ffffff;
+      --surface-alt:  #f8f5ef;
+      --forest:       #1c3830;
+      --forest-hover: #2a5244;
+      --sage:         #5a9478;
+      --sage-light:   #d4e6de;
+      --text:         #1a1917;
+      --muted:        #6b6660;
+      --border:       #ddd8cc;
+      --border-light: #edeae3;
+    }
+
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #f5f0e8;
-      color: #1a1a1a;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
       min-height: 100vh;
-      padding: 0 1rem 4rem;
+      padding: 0 1rem 5rem;
     }
 
     header {
-      max-width: 860px;
+      max-width: 920px;
       margin: 0 auto;
-      padding: 3rem 0 2rem;
+      padding: 3.5rem 0 2.5rem;
     }
-
     .brand {
-      font-size: 0.75rem;
+      font-size: 0.7rem;
       font-weight: 600;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
-      color: #555;
+      color: var(--muted);
       margin-bottom: 1rem;
     }
-
     h1 {
-      font-size: clamp(2rem, 5vw, 3rem);
-      font-weight: 700;
-      line-height: 1.1;
-      margin-bottom: 0.75rem;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      font-weight: 600;
+      line-height: 1.15;
+      margin-bottom: 0.85rem;
+      color: var(--forest);
     }
-
     .subtitle {
       font-size: 0.95rem;
-      color: #555;
-      max-width: 480px;
-      line-height: 1.5;
+      color: var(--muted);
+      max-width: 460px;
+      line-height: 1.65;
     }
 
     .card {
-      max-width: 860px;
+      max-width: 920px;
       margin: 0 auto;
-      background: #fff;
-      border-radius: 16px;
-      padding: 1.5rem;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+      background: var(--surface);
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.07);
     }
 
-    .filters {
+    .filters-row {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      grid-template-columns: 1fr 1fr auto;
       gap: 1rem;
-      margin-bottom: 1.25rem;
+      align-items: end;
     }
-
     .filter-group label {
       display: block;
-      font-size: 0.75rem;
+      font-size: 0.68rem;
       font-weight: 600;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: #888;
-      margin-bottom: 0.4rem;
+      color: var(--muted);
+      margin-bottom: 0.45rem;
     }
-
     select {
       width: 100%;
-      padding: 0.55rem 0.8rem;
-      border: 1px solid #e0e0e0;
-      border-radius: 8px;
+      padding: 0.6rem 2.2rem 0.6rem 0.9rem;
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
       font-size: 0.9rem;
-      background: #fff;
-      color: #1a1a1a;
+      font-family: inherit;
+      background-color: var(--surface-alt);
+      color: var(--text);
       appearance: none;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23888' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236b6660' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
       background-repeat: no-repeat;
-      background-position: right 0.75rem center;
+      background-position: right 0.85rem center;
       cursor: pointer;
+      transition: border-color 0.15s;
     }
-
+    select:focus { outline: none; border-color: var(--forest); }
     .btn-clear {
-      align-self: end;
-      padding: 0.55rem 1.25rem;
-      background: #1a3a3a;
+      padding: 0.6rem 1.4rem;
+      background: var(--forest);
       color: #fff;
       border: none;
-      border-radius: 8px;
-      font-size: 0.9rem;
+      border-radius: 10px;
+      font-size: 0.88rem;
+      font-family: inherit;
       font-weight: 500;
       cursor: pointer;
       white-space: nowrap;
+      transition: background 0.15s;
+      height: fit-content;
     }
+    .btn-clear:hover { background: var(--forest-hover); }
 
-    .btn-clear:hover { background: #2a5454; }
-
-    .meta {
+    .cal-section {
+      border-top: 1.5px solid var(--border-light);
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+    }
+    .cal-section > .section-label {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+    .cal-header {
       display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-bottom: 1rem;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.85rem;
     }
-
-    .badge {
-      display: inline-block;
-      padding: 0.3rem 0.75rem;
-      border-radius: 999px;
-      font-size: 0.8rem;
-      font-weight: 500;
+    .cal-month-title { font-weight: 600; font-size: 0.95rem; }
+    .cal-nav { display: flex; gap: 0.35rem; }
+    .cal-nav button {
+      width: 32px; height: 32px;
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      background: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text);
+      transition: all 0.15s;
+      font-size: 0.85rem;
     }
-
-    .badge-count { background: #e8f0e8; color: #2a5a2a; }
-    .badge-time  { background: #e8e8f0; color: #2a2a5a; }
-
-    .hint {
+    .cal-nav button:hover { background: var(--sage-light); border-color: var(--sage); }
+    .cal-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 3px;
+    }
+    .cal-day-name {
+      text-align: center;
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding: 0.25rem 0 0.4rem;
+    }
+    .cal-day {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2px;
+      aspect-ratio: 1;
+      border-radius: 8px;
       font-size: 0.82rem;
-      color: #888;
-      margin-bottom: 1rem;
+      cursor: default;
+      transition: background 0.12s, color 0.12s;
+      color: var(--border);
+      user-select: none;
+      min-width: 0;
     }
+    .cal-day.in-month     { color: var(--muted); }
+    .cal-day.past         { color: #c4bfb5; }
+    .cal-day.has-sessions { color: var(--text); font-weight: 500; cursor: pointer; }
+    .cal-day.has-sessions:hover:not(.selected) { background: var(--sage-light); }
+    .cal-day.today:not(.selected) .day-num { text-decoration: underline; text-underline-offset: 2px; }
+    .cal-day.selected     { background: var(--forest) !important; color: #fff !important; }
+    .cal-day .day-num     { line-height: 1; }
+    .cal-day .session-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--sage); flex-shrink: 0; }
+    .cal-day.selected .session-dot { background: rgba(255,255,255,0.55); }
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.875rem;
+    .cal-footer {
+      margin-top: 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
     }
+    .btn-all-dates {
+      font-size: 0.78rem;
+      font-family: inherit;
+      font-weight: 500;
+      padding: 0.3rem 1rem;
+      border-radius: 999px;
+      border: 1.5px solid var(--border);
+      background: none;
+      color: var(--muted);
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .btn-all-dates:hover, .btn-all-dates.active {
+      background: var(--forest);
+      color: #fff;
+      border-color: var(--forest);
+    }
+    .selected-date-label { font-size: 0.82rem; color: var(--muted); }
 
+    .divider { border: none; border-top: 1.5px solid var(--border-light); margin: 1.5rem 0 1.25rem; }
+
+    .meta { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; }
+    .badge { display: inline-block; padding: 0.3rem 0.8rem; border-radius: 999px; font-size: 0.76rem; font-weight: 500; }
+    .badge-count { background: #d4e6de; color: #1a5030; }
+    .badge-time  { background: #e6e4f0; color: #2a2860; }
+
+    table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
     thead th {
       text-align: left;
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
+      font-size: 0.66rem;
+      font-weight: 600;
+      letter-spacing: 0.09em;
       text-transform: uppercase;
-      color: #888;
+      color: var(--muted);
       padding: 0.5rem 0.75rem;
-      border-bottom: 1px solid #eee;
+      border-bottom: 1.5px solid var(--border-light);
     }
-
-    tbody tr { border-bottom: 1px solid #f2f2f2; }
+    tbody tr { border-bottom: 1px solid var(--border-light); }
     tbody tr:last-child { border-bottom: none; }
-    tbody td { padding: 0.85rem 0.75rem; vertical-align: middle; }
-
-    .date-cell .day   { font-weight: 600; }
-    .date-cell .year  { font-size: 0.78rem; color: #aaa; }
-
-    .gusmaster-empty { font-style: italic; color: #bbb; }
-
+    tbody td { padding: 0.9rem 0.75rem; vertical-align: middle; }
+    .date-cell .day  { font-weight: 600; }
+    .date-cell .year { font-size: 0.75rem; color: #b0ab9f; }
+    .gusmaster-empty { font-style: italic; color: #c0bbb0; }
     .avail-badge {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 36px;
-      height: 36px;
+      width: 36px; height: 36px;
       border-radius: 50%;
       font-weight: 700;
-      font-size: 0.85rem;
+      font-size: 0.82rem;
     }
+    .avail-high   { background: #d0e8d0; color: #1a5020; }
+    .avail-medium { background: #fce4b8; color: #7a4200; }
+    .avail-low    { background: #fcd0cc; color: #8a1500; }
+    .avail-none   { background: #ebebeb; color: #999; }
 
-    .avail-high   { background: #e8f4e8; color: #2a6a2a; }
-    .avail-medium { background: #fff4e0; color: #7a4a00; }
-    .avail-low    { background: #fde8e8; color: #8a1a1a; }
-    .avail-none   { background: #eee;    color: #999; }
+    #loading, #error { text-align: center; padding: 3rem 1rem; color: var(--muted); font-size: 0.9rem; }
+    #error { color: #b02020; }
 
-    #loading, #error {
-      text-align: center;
-      padding: 2rem;
-      color: #888;
-    }
-    #error { color: #c00; }
+    @media (max-width: 640px) {
+      header { padding: 2rem 0 1.5rem; }
+      .card  { padding: 1.25rem; border-radius: 16px; }
+      .filters-row { grid-template-columns: 1fr; }
 
-    @media (max-width: 600px) {
-      thead th:nth-child(3),
-      tbody td:nth-child(3) { display: none; }
+      table, thead, tbody, tr, td, th { display: block; }
+      thead { display: none; }
+
+      tbody tr {
+        background: var(--surface-alt);
+        border: 1.5px solid var(--border-light);
+        border-radius: 14px;
+        margin-bottom: 0.75rem;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.6rem 1rem;
+        align-items: start;
+      }
+      tbody tr:last-child { margin-bottom: 0; }
+      tbody td { padding: 0; display: flex; flex-direction: column; gap: 0.15rem; font-size: 0.875rem; }
+      tbody td::before {
+        content: attr(data-label);
+        font-size: 0.62rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.07em;
+        color: var(--muted);
+      }
+      tbody td:nth-child(1) {
+        grid-column: 1 / -1;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--border-light);
+        padding-bottom: 0.6rem;
+        margin-bottom: 0.1rem;
+      }
+      tbody td:nth-child(1)::before { display: none; }
+      tbody td:nth-child(1) .year   { display: none; }
+      tbody td:nth-child(6) {
+        grid-column: 1 / -1;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.6rem;
+        border-top: 1px solid var(--border-light);
+        padding-top: 0.5rem;
+        margin-top: 0.1rem;
+      }
     }
   </style>
 </head>
@@ -184,13 +317,11 @@
 <header>
   <p class="brand">Winter Island</p>
   <h1>Find your next sauna session.</h1>
-  <p class="subtitle">
-    Filter by gusmaster, session type, or date to see upcoming aufguss sessions.
-  </p>
+  <p class="subtitle">Filter by gusmaster, session type, or date to see upcoming aufguss sessions.</p>
 </header>
 
 <div class="card">
-  <div class="filters">
+  <div class="filters-row">
     <div class="filter-group">
       <label for="f-gusmaster">Gusmaster</label>
       <select id="f-gusmaster"><option value="">All gusmasters</option></select>
@@ -199,20 +330,31 @@
       <label for="f-product">Product</label>
       <select id="f-product"><option value="">All sessions</option></select>
     </div>
-    <div class="filter-group">
-      <label for="f-date">Date</label>
-      <select id="f-date"><option value="">All dates</option></select>
+    <button class="btn-clear" onclick="clearFilters()">Clear filters</button>
+  </div>
+
+  <div class="cal-section">
+    <p class="section-label">Date</p>
+    <div class="cal-header">
+      <span class="cal-month-title" id="cal-month-title">—</span>
+      <div class="cal-nav">
+        <button onclick="prevMonth()" aria-label="Previous month">&#8592;</button>
+        <button onclick="nextMonth()" aria-label="Next month">&#8594;</button>
+      </div>
     </div>
-    <div class="filter-group" style="display:flex;align-items:flex-end;">
-      <button class="btn-clear" onclick="clearFilters()">Clear filters</button>
+    <div class="cal-grid" id="cal-grid"></div>
+    <div class="cal-footer">
+      <button class="btn-all-dates active" id="btn-all-dates" onclick="clearCalendar()">All dates</button>
+      <span class="selected-date-label" id="selected-date-label"></span>
     </div>
   </div>
+
+  <hr class="divider">
 
   <div class="meta">
     <span class="badge badge-count" id="count-badge">Loading…</span>
     <span class="badge badge-time"  id="time-badge"></span>
   </div>
-  <p class="hint">Use the filters to narrow down the schedule.</p>
 
   <div id="loading">Loading sessions…</div>
   <div id="error" style="display:none"></div>
@@ -220,12 +362,7 @@
   <table id="schedule" style="display:none">
     <thead>
       <tr>
-        <th>Date</th>
-        <th>Start time</th>
-        <th>End time</th>
-        <th>Product</th>
-        <th>Gusmaster</th>
-        <th>Availability</th>
+        <th>Date</th><th>Start</th><th>End</th><th>Product</th><th>Gusmaster</th><th>Availability</th>
       </tr>
     </thead>
     <tbody id="tbody"></tbody>
@@ -234,9 +371,9 @@
 
 <script>
   const DATA_URL = "./data.json";
-
-  let allItems = [];
-  let totalCount = 0;
+  let allItems = [], totalCount = 0;
+  let sessionDates = new Set();
+  let calYear, calMonth, selectedDate = null;
 
   const tbody      = document.getElementById("tbody");
   const schedule   = document.getElementById("schedule");
@@ -244,113 +381,110 @@
   const errorEl    = document.getElementById("error");
   const countBadge = document.getElementById("count-badge");
   const timeBadge  = document.getElementById("time-badge");
-
   const fGusmaster = document.getElementById("f-gusmaster");
   const fProduct   = document.getElementById("f-product");
-  const fDate      = document.getElementById("f-date");
 
-  function formatDate(dateStr) {
-    const d = new Date(dateStr + "T00:00:00");
-    const day = d.toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" });
-    return { day, year: d.getFullYear() };
+  function toISO(d) {
+    return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
   }
-
+  function formatDate(iso) {
+    const d = new Date(iso + "T00:00:00");
+    return { day: d.toLocaleDateString("en-GB", { weekday:"short", day:"numeric", month:"short" }), year: d.getFullYear() };
+  }
+  function formatDateLong(iso) {
+    return new Date(iso + "T00:00:00").toLocaleDateString("en-GB", { weekday:"long", day:"numeric", month:"long", year:"numeric" });
+  }
   function formatUpdated(iso) {
-    const d = new Date(iso);
-    return d.toLocaleString("en-GB", {
-      day: "numeric", month: "short", year: "numeric",
-      hour: "2-digit", minute: "2-digit"
-    });
+    return new Date(iso).toLocaleString("en-GB", { day:"numeric", month:"short", year:"numeric", hour:"2-digit", minute:"2-digit" });
   }
-
   function availClass(n) {
-    if (n === 0)  return "avail-none";
-    if (n <= 5)   return "avail-low";
-    if (n <= 15)  return "avail-medium";
+    if (n === 0) return "avail-none";
+    if (n <= 5)  return "avail-low";
+    if (n <= 15) return "avail-medium";
     return "avail-high";
   }
+  function populateSelect(el, values, label) {
+    el.innerHTML = `<option value="">${label}</option>`;
+    [...new Set(values)].sort().forEach(v => { const o = document.createElement("option"); o.value = o.textContent = v; el.appendChild(o); });
+  }
 
-  function populateSelect(el, values, defaultLabel) {
-    el.innerHTML = `<option value="">${defaultLabel}</option>`;
-    [...new Set(values)].sort().forEach(v => {
-      const opt = document.createElement("option");
-      opt.value = v; opt.textContent = v;
-      el.appendChild(opt);
-    });
+  const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  const DAYS   = ["Mo","Tu","We","Th","Fr","Sa","Su"];
+
+  function initCalendar() {
+    const t = new Date(); calYear = t.getFullYear(); calMonth = t.getMonth();
+    renderCalendar();
+  }
+  function renderCalendar() {
+    document.getElementById("cal-month-title").textContent = `${MONTHS[calMonth]} ${calYear}`;
+    const todayISO = toISO(new Date());
+    const todayDate = new Date(); todayDate.setHours(0,0,0,0);
+    const firstDay = new Date(calYear, calMonth, 1);
+    const days = new Date(calYear, calMonth + 1, 0).getDate();
+    const offset = (firstDay.getDay() + 6) % 7;
+    let html = DAYS.map(n => `<div class="cal-day-name">${n}</div>`).join("");
+    for (let i = 0; i < offset; i++) html += `<div class="cal-day"></div>`;
+    for (let d = 1; d <= days; d++) {
+      const date = new Date(calYear, calMonth, d);
+      const iso  = toISO(date);
+      const cls  = ["cal-day","in-month",
+        date < todayDate       ? "past"         : "",
+        sessionDates.has(iso)  ? "has-sessions" : "",
+        iso === todayISO       ? "today"         : "",
+        iso === selectedDate   ? "selected"      : ""
+      ].filter(Boolean).join(" ");
+      const dot = sessionDates.has(iso) ? `<div class="session-dot"></div>` : "";
+      const oc  = sessionDates.has(iso) ? `onclick="selectDate('${iso}')"` : "";
+      html += `<div class="${cls}" ${oc}><span class="day-num">${d}</span>${dot}</div>`;
+    }
+    document.getElementById("cal-grid").innerHTML = html;
+  }
+  function prevMonth() { if (--calMonth < 0)  { calMonth = 11; calYear--; } renderCalendar(); }
+  function nextMonth() { if (++calMonth > 11) { calMonth = 0;  calYear++; } renderCalendar(); }
+  function selectDate(iso) { selectedDate = selectedDate === iso ? null : iso; renderCalendar(); updateCalFooter(); render(); }
+  function clearCalendar() { selectedDate = null; renderCalendar(); updateCalFooter(); render(); }
+  function updateCalFooter() {
+    const btn = document.getElementById("btn-all-dates");
+    const lbl = document.getElementById("selected-date-label");
+    if (selectedDate) { btn.classList.remove("active"); lbl.textContent = formatDateLong(selectedDate); }
+    else              { btn.classList.add("active");    lbl.textContent = ""; }
   }
 
   function render() {
-    const gus  = fGusmaster.value;
-    const prod = fProduct.value;
-    const date = fDate.value;
-
-    const filtered = allItems.filter(item =>
-      (!gus  || item.gusmester === gus) &&
-      (!prod || item.product === prod)  &&
-      (!date || item.date === date)
+    const gus = fGusmaster.value, prod = fProduct.value;
+    const filtered = allItems.filter(i =>
+      (!gus          || i.gusmester === gus)  &&
+      (!prod         || i.product   === prod) &&
+      (!selectedDate || i.date      === selectedDate)
     );
-
     countBadge.textContent = `Showing ${filtered.length} of ${totalCount} sessions`;
-
     tbody.innerHTML = filtered.map(item => {
       const { day, year } = formatDate(item.date);
-      const gusName = item.gusmester
-        ? item.gusmester
-        : `<span class="gusmaster-empty">TBA</span>`;
-      return `
-        <tr>
-          <td class="date-cell">
-            <div class="day">${day}</div>
-            <div class="year">${year}</div>
-          </td>
-          <td>${item.startTime}</td>
-          <td>${item.endTime}</td>
-          <td>${item.product}</td>
-          <td>${gusName}</td>
-          <td><span class="avail-badge ${availClass(item.availability)}">${item.availability}</span></td>
-        </tr>`;
+      const g = item.gusmester ? item.gusmester : `<span class="gusmaster-empty">TBA</span>`;
+      return `<tr>
+        <td data-label="Date" class="date-cell"><div class="day">${day}</div><div class="year">${year}</div></td>
+        <td data-label="Start">${item.startTime}</td>
+        <td data-label="End">${item.endTime}</td>
+        <td data-label="Product">${item.product}</td>
+        <td data-label="Gusmaster">${g}</td>
+        <td data-label="Availability"><span class="avail-badge ${availClass(item.availability)}">${item.availability}</span></td>
+      </tr>`;
     }).join("");
   }
 
-  function clearFilters() {
-    fGusmaster.value = "";
-    fProduct.value   = "";
-    fDate.value      = "";
-    render();
-  }
-
+  function clearFilters() { fGusmaster.value = ""; fProduct.value = ""; clearCalendar(); }
   fGusmaster.addEventListener("change", render);
   fProduct.addEventListener("change", render);
-  fDate.addEventListener("change", render);
 
   fetch(DATA_URL)
     .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
     .then(data => {
-      allItems   = data.items || [];
-      totalCount = data.count || allItems.length;
-
-      if (!allItems.length) {
-        loadingEl.style.display = "none";
-        errorEl.style.display   = "block";
-        errorEl.textContent     = "Schedule data not yet available. Please check back shortly.";
-        return;
-      }
-
+      allItems = data.items || []; totalCount = data.count || allItems.length;
+      sessionDates = new Set(allItems.map(i => i.date));
       populateSelect(fGusmaster, allItems.map(i => i.gusmester).filter(Boolean), "All gusmasters");
-      populateSelect(fProduct,   allItems.map(i => i.product),                   "All sessions");
-      populateSelect(fDate,      allItems.map(i => i.date), "All dates");
-
-      [...fDate.options].forEach(opt => {
-        if (opt.value) {
-          const { day, year } = formatDate(opt.value);
-          opt.textContent = `${day} ${year}`;
-        }
-      });
-
-      if (data.updatedAt) {
-        timeBadge.textContent = `Updated ${formatUpdated(data.updatedAt)}`;
-      }
-
+      populateSelect(fProduct,   allItems.map(i => i.product), "All sessions");
+      if (data.updatedAt) timeBadge.textContent = `Updated ${formatUpdated(data.updatedAt)}`;
+      initCalendar();
       loadingEl.style.display = "none";
       schedule.style.display  = "table";
       render();
@@ -359,6 +493,7 @@
       loadingEl.style.display = "none";
       errorEl.style.display   = "block";
       errorEl.textContent     = `Could not load sessions: ${err.message}`;
+      initCalendar();
     });
 </script>
 </body>
