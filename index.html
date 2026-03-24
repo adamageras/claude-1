@@ -233,11 +233,7 @@
 </div>
 
 <script>
-  // ── CONFIG ─────────────────────────────────────────────────────────────────────────────
-  // Replace this URL if you create a new Google Script deployment.
-  const DATA_URL =
-    "https://script.google.com/macros/s/AKfycbySBcF9eUTg86VwSe-yn-xrXGcDWCJTwD9ywmuG_Wvavhh8KH2tqA2MBUT_UCdvRbBzUA/exec";
-  // ──────────────────────────────────────────────────────────────────────────────
+  const DATA_URL = "./data.json";
 
   let allItems = [];
   let totalCount = 0;
@@ -332,6 +328,13 @@
     .then(data => {
       allItems   = data.items || [];
       totalCount = data.count || allItems.length;
+
+      if (!allItems.length) {
+        loadingEl.style.display = "none";
+        errorEl.style.display   = "block";
+        errorEl.textContent     = "Schedule data not yet available. Please check back shortly.";
+        return;
+      }
 
       populateSelect(fGusmaster, allItems.map(i => i.gusmester).filter(Boolean), "All gusmasters");
       populateSelect(fProduct,   allItems.map(i => i.product),                   "All sessions");
