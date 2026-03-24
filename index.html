@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Find your next sauna session – Winter Island</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f5f0e8;
+      color: #1a1a1a;
+      min-height: 100vh;
+      padding: 0 1rem 4rem;
+    }
+
+    header {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 3rem 0 2rem;
+    }
+
+    .brand {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 0.75rem;
+    }
+
+    .subtitle {
+      font-size: 0.95rem;
+      color: #555;
+      max-width: 480px;
+      line-height: 1.5;
+    }
+
+    .card {
+      max-width: 860px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+
+    .filters {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .filter-group label {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 0.4rem;
+    }
+
+    select {
+      width: 100%;
+      padding: 0.55rem 0.8rem;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      background: #fff;
+      color: #1a1a1a;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23888' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.75rem center;
+      cursor: pointer;
+    }
+
+    .btn-clear {
+      align-self: end;
+      padding: 0.55rem 1.25rem;
+      background: #1a3a3a;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .btn-clear:hover { background: #2a5454; }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.3rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    .badge-count { background: #e8f0e8; color: #2a5a2a; }
+    .badge-time  { background: #e8e8f0; color: #2a2a5a; }
+
+    .hint {
+      font-size: 0.82rem;
+      color: #888;
+      margin-bottom: 1rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.875rem;
+    }
+
+    thead th {
+      text-align: left;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #888;
+      padding: 0.5rem 0.75rem;
+      border-bottom: 1px solid #eee;
+    }
+
+    tbody tr { border-bottom: 1px solid #f2f2f2; }
+    tbody tr:last-child { border-bottom: none; }
+    tbody td { padding: 0.85rem 0.75rem; vertical-align: middle; }
+
+    .date-cell .day   { font-weight: 600; }
+    .date-cell .year  { font-size: 0.78rem; color: #aaa; }
+
+    .gusmaster-empty { font-style: italic; color: #bbb; }
+
+    .avail-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+
+    .avail-high   { background: #e8f4e8; color: #2a6a2a; }
+    .avail-medium { background: #fff4e0; color: #7a4a00; }
+    .avail-low    { background: #fde8e8; color: #8a1a1a; }
+    .avail-none   { background: #eee;    color: #999; }
+
+    #loading, #error {
+      text-align: center;
+      padding: 2rem;
+      color: #888;
+    }
+    #error { color: #c00; }
+
+    @media (max-width: 600px) {
+      thead th:nth-child(3) /* end time */,
+      tbody td:nth-child(3) { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <p class="brand">Winter Island</p>
+  <h1>Find your next sauna session.</h1>
+  <p class="subtitle">
+    Filter by gusmaster, session type, or date to see upcoming aufguss sessions.
+  </p>
+</header>
+
+<div class="card">
+  <div class="filters">
+    <div class="filter-group">
+      <label for="f-gusmaster">Gusmaster</label>
+      <select id="f-gusmaster"><option value="">All gusmasters</option></select>
+    </div>
+    <div class="filter-group">
+      <label for="f-product">Product</label>
+      <select id="f-product"><option value="">All sessions</option></select>
+    </div>
+    <div class="filter-group">
+      <label for="f-date">Date</label>
+      <select id="f-date"><option value="">All dates</option></select>
+    </div>
+    <div class="filter-group" style="display:flex;align-items:flex-end;">
+      <button class="btn-clear" onclick="clearFilters()">Clear filters</button>
+    </div>
+  </div>
+
+  <div class="meta">
+    <span class="badge badge-count" id="count-badge">Loading…</span>
+    <span class="badge badge-time"  id="time-badge"></span>
+  </div>
+  <p class="hint">Use the filters to narrow down the schedule.</p>
+
+  <div id="loading">Loading sessions…</div>
+  <div id="error" style="display:none"></div>
+
+  <table id="schedule" style="display:none">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Start time</th>
+        <th>End time</th>
+        <th>Product</th>
+        <th>Gusmaster</th>
+        <th>Availability</th>
+      </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+  </table>
+</div>
+
+<script>
+  // ── CONFIG ──────────────────────────────────────────────────────────────────
+  // Replace this URL with your own Google Script JSON endpoint if you redeploy.
+  const DATA_URL =
+    "https://script.googleusercontent.com/macros/echo?user_content_key=AWDtjMV4N6uVK-nxMqYNCSt1lZaHOmAsBc4gq7UEfCw87yH9CUh7vsujmgtTrFgUB-5OOiX7nVHBzt3_Y_5vnaKaWHmhPKngI9F-pxAMg08JFUo7jImGDlEyhNLlyxbn7tKBgb2DPDaUbKlpVzcUZsXHSzj8jLa5DFr3OY_28JZJqhihdEd9P4wtjZ1NPvwp8VgUMYidapBgdqS_mG0B3hbuVX5ivRkI-vqpJz3QYLrQxxi4P2pGVjxOhvArhDDqSA&lib=MgFJ8XQFRE5PeaiE8JkajVXGI60UhiwOX";
+  // ────────────────────────────────────────────────────────────────────────────
+
+  let allItems = [];
+  let totalCount = 0;
+
+  const tbody      = document.getElementById("tbody");
+  const schedule   = document.getElementById("schedule");
+  const loadingEl  = document.getElementById("loading");
+  const errorEl    = document.getElementById("error");
+  const countBadge = document.getElementById("count-badge");
+  const timeBadge  = document.getElementById("time-badge");
+
+  const fGusmaster = document.getElementById("f-gusmaster");
+  const fProduct   = document.getElementById("f-product");
+  const fDate      = document.getElementById("f-date");
+
+  // Format date for display
+  function formatDate(dateStr) {
+    const d = new Date(dateStr + "T00:00:00");
+    const day = d.toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" });
+    return { day, year: d.getFullYear() };
+  }
+
+  // Format updatedAt timestamp
+  function formatUpdated(iso) {
+    const d = new Date(iso);
+    return d.toLocaleString("en-GB", {
+      day: "numeric", month: "short", year: "numeric",
+      hour: "2-digit", minute: "2-digit"
+    });
+  }
+
+  // Availability colour
+  function availClass(n) {
+    if (n === 0)  return "avail-none";
+    if (n <= 5)   return "avail-low";
+    if (n <= 15)  return "avail-medium";
+    return "avail-high";
+  }
+
+  function populateSelect(el, values, defaultLabel) {
+    el.innerHTML = `<option value="">${defaultLabel}</option>`;
+    [...new Set(values)].sort().forEach(v => {
+      const opt = document.createElement("option");
+      opt.value = v; opt.textContent = v;
+      el.appendChild(opt);
+    });
+  }
+
+  function render() {
+    const gus  = fGusmaster.value;
+    const prod = fProduct.value;
+    const date = fDate.value;
+
+    const filtered = allItems.filter(item =>
+      (!gus  || item.gusmester === gus) &&
+      (!prod || item.product === prod)  &&
+      (!date || item.date === date)
+    );
+
+    countBadge.textContent = `Showing ${filtered.length} of ${totalCount} sessions`;
+
+    tbody.innerHTML = filtered.map(item => {
+      const { day, year } = formatDate(item.date);
+      const gusName = item.gusmester
+        ? item.gusmester
+        : `<span class="gusmaster-empty">TBA</span>`;
+      return `
+        <tr>
+          <td class="date-cell">
+            <div class="day">${day}</div>
+            <div class="year">${year}</div>
+          </td>
+          <td>${item.startTime}</td>
+          <td>${item.endTime}</td>
+          <td>${item.product}</td>
+          <td>${gusName}</td>
+          <td><span class="avail-badge ${availClass(item.availability)}">${item.availability}</span></td>
+        </tr>`;
+    }).join("");
+  }
+
+  function clearFilters() {
+    fGusmaster.value = "";
+    fProduct.value   = "";
+    fDate.value      = "";
+    render();
+  }
+
+  fGusmaster.addEventListener("change", render);
+  fProduct.addEventListener("change", render);
+  fDate.addEventListener("change", render);
+
+  // Fetch data
+  fetch(DATA_URL)
+    .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+    .then(data => {
+      allItems   = data.items || [];
+      totalCount = data.count || allItems.length;
+
+      populateSelect(fGusmaster, allItems.map(i => i.gusmester).filter(Boolean), "All gusmasters");
+      populateSelect(fProduct,   allItems.map(i => i.product),                   "All sessions");
+      populateSelect(fDate,      allItems.map(i => i.date).map(d => {
+        // show as readable in dropdown
+        const { day, year } = formatDate(d);
+        return d; // keep value as ISO, display below
+      }), "All dates");
+
+      // Rewrite date options to readable labels
+      [...fDate.options].forEach(opt => {
+        if (opt.value) {
+          const { day, year } = formatDate(opt.value);
+          opt.textContent = `${day} ${year}`;
+        }
+      });
+
+      if (data.updatedAt) {
+        timeBadge.textContent = `Updated ${formatUpdated(data.updatedAt)}`;
+      }
+
+      loadingEl.style.display = "none";
+      schedule.style.display  = "table";
+      render();
+    })
+    .catch(err => {
+      loadingEl.style.display = "none";
+      errorEl.style.display   = "block";
+      errorEl.textContent     = `Could not load sessions: ${err.message}`;
+    });
+</script>
+</body>
+</html>
