@@ -22,8 +22,6 @@ jobs:
 
       - name: Fetch schedule data
         run: node scripts/fetch-data.js
-        env:
-          BOOKSPOT_API_KEY: ${{ secrets.BOOKSPOT_API_KEY }}
 
       - name: Commit and push if data changed
         run: |
