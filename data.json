@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-03-25T13:02:23.354Z",
-  "sourceUpdatedAt": "2026-03-25T12:49:29.869Z",
+  "updatedAt": "2026-03-25T14:40:55.579Z",
+  "sourceUpdatedAt": "2026-03-25T14:19:28.641Z",
   "status": "ok",
   "count": 75,
   "items": [
@@ -202,7 +202,7 @@
       "endTime": "20:15",
       "product": "Sauna Gus (HEAT & BEATS) - Horizon",
       "gusmester": "Gretha Storm",
-      "availability": 26
+      "availability": 22
     },
     {
       "date": "2026-04-04",
