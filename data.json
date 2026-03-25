@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-03-24T23:39:37.253Z",
-  "sourceUpdatedAt": "2026-03-24T23:19:26.484Z",
+  "updatedAt": "2026-03-25T01:56:25.582Z",
+  "sourceUpdatedAt": "2026-03-25T01:49:26.689Z",
   "status": "ok",
   "count": 75,
   "items": [
@@ -186,7 +186,7 @@
       "endTime": "15:15",
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "Caroline Holm Oxfeldt",
-      "availability": 28
+      "availability": 30
     },
     {
       "date": "2026-04-03",
