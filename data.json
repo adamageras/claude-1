@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-03-26T21:35:27.912Z",
-  "sourceUpdatedAt": "2026-03-26T20:49:28.808Z",
-  "status": "stale",
+  "updatedAt": "2026-03-26T22:26:00.849Z",
+  "sourceUpdatedAt": "2026-03-26T22:19:24.216Z",
+  "status": "ok",
   "count": 76,
   "items": [
     {
@@ -18,7 +18,7 @@
       "endTime": "20:15",
       "product": "Sauna Gus (HEAT & BEATS) - Horizon",
       "gusmester": "Maria Fagranes Clemmensen",
-      "availability": 9
+      "availability": 7
     },
     {
       "date": "2026-03-28",
@@ -26,7 +26,7 @@
       "endTime": "13:15",
       "product": "Sauna Gus (CALM) - Horizon",
       "gusmester": "Caroline Holm Oxfeldt",
-      "availability": 18
+      "availability": 17
     },
     {
       "date": "2026-03-28",
@@ -58,7 +58,7 @@
       "endTime": "11:15",
       "product": "Sauna Gus (CALM) - Horizon",
       "gusmester": "Kamille jacqueline Høgh Sørensen",
-      "availability": 22
+      "availability": 20
     },
     {
       "date": "2026-03-29",
@@ -66,7 +66,7 @@
       "endTime": "13:15",
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "Katelein Tang Züger",
-      "availability": 30
+      "availability": 28
     },
     {
       "date": "2026-03-29",
@@ -612,6 +612,5 @@
       "gusmester": "",
       "availability": 30
     }
-  ],
-  "message": "Bandwidth quota exceeded: https://api.bookspot.io/api/guest/v3/products/17016/start-time-prices?durationId=8095&participants=1&key=b16c2784ae1c6119c4a7a558a709d9a4dbe92d8acb618d86a79047fe93509d3d&startDate=2026-04-02&startTime=12%3A00&endDate=2026-04-02&endTime=13%3A15&availability=24&min=0&capacity=30. Try reducing the rate of data transfer."
+  ]
 }
