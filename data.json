@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-03-26T20:57:49.300Z",
+  "updatedAt": "2026-03-26T21:35:27.912Z",
   "sourceUpdatedAt": "2026-03-26T20:49:28.808Z",
-  "status": "ok",
+  "status": "stale",
   "count": 76,
   "items": [
     {
@@ -612,5 +612,6 @@
       "gusmester": "",
       "availability": 30
     }
-  ]
+  ],
+  "message": "Bandwidth quota exceeded: https://api.bookspot.io/api/guest/v3/products/17016/start-time-prices?durationId=8095&participants=1&key=b16c2784ae1c6119c4a7a558a709d9a4dbe92d8acb618d86a79047fe93509d3d&startDate=2026-04-02&startTime=12%3A00&endDate=2026-04-02&endTime=13%3A15&availability=24&min=0&capacity=30. Try reducing the rate of data transfer."
 }
