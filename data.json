@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-03-26T22:56:22.072Z",
-  "sourceUpdatedAt": "2026-03-26T22:49:23.575Z",
+  "updatedAt": "2026-03-26T23:33:13.939Z",
+  "sourceUpdatedAt": "2026-03-26T23:19:32.668Z",
   "status": "ok",
-  "count": 76,
+  "count": 79,
   "items": [
     {
       "date": "2026-03-27",
@@ -154,7 +154,7 @@
       "endTime": "13:15",
       "product": "Sauna Gus (CALM) - Horizon",
       "gusmester": "Katelein Tang Züger",
-      "availability": 30
+      "availability": 28
     },
     {
       "date": "2026-04-03",
@@ -610,6 +610,30 @@
       "endTime": "19:15",
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "",
+      "availability": 30
+    },
+    {
+      "date": "2026-04-26",
+      "startTime": "10:00",
+      "endTime": "11:15",
+      "product": "Sauna Gus (CALM) - Horizon",
+      "gusmester": "",
+      "availability": 30
+    },
+    {
+      "date": "2026-04-26",
+      "startTime": "12:00",
+      "endTime": "13:15",
+      "product": "Sauna Gus (FLOW) - Horizon",
+      "gusmester": "",
+      "availability": 30
+    },
+    {
+      "date": "2026-04-26",
+      "startTime": "14:00",
+      "endTime": "15:15",
+      "product": "Sauna Gus (FLOW) - Horizon",
+      "gusmester": "Andreas Krabholm",
       "availability": 30
     }
   ]
