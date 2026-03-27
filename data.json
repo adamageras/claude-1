@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-03-27T09:51:53.818Z",
-  "sourceUpdatedAt": "2026-03-27T09:49:31.954Z",
+  "updatedAt": "2026-03-27T10:43:44.269Z",
+  "sourceUpdatedAt": "2026-03-27T10:19:23.759Z",
   "status": "ok",
   "count": 79,
   "items": [
@@ -18,7 +18,7 @@
       "endTime": "20:15",
       "product": "Sauna Gus (HEAT & BEATS) - Horizon",
       "gusmester": "Maria Fagranes Clemmensen",
-      "availability": 6
+      "availability": 5
     },
     {
       "date": "2026-03-28",
@@ -26,7 +26,7 @@
       "endTime": "13:15",
       "product": "Sauna Gus (CALM) - Horizon",
       "gusmester": "Caroline Holm Oxfeldt",
-      "availability": 17
+      "availability": 14
     },
     {
       "date": "2026-03-28",
@@ -42,7 +42,7 @@
       "endTime": "17:15",
       "product": "Sauna Gus (BOOST) - Horizon",
       "gusmester": "Mads Gøthler",
-      "availability": 26
+      "availability": 24
     },
     {
       "date": "2026-03-28",
@@ -610,7 +610,7 @@
       "endTime": "19:15",
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "",
-      "availability": 30
+      "availability": 28
     },
     {
       "date": "2026-04-26",
