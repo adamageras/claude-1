@@ -1,17 +1,9 @@
 {
-  "updatedAt": "2026-03-29T07:32:46.361Z",
-  "sourceUpdatedAt": "2026-03-29T07:19:25.630Z",
+  "updatedAt": "2026-03-29T08:36:26.720Z",
+  "sourceUpdatedAt": "2026-03-29T08:19:26.841Z",
   "status": "ok",
-  "count": 78,
+  "count": 77,
   "items": [
-    {
-      "date": "2026-03-29",
-      "startTime": "10:00",
-      "endTime": "11:15",
-      "product": "Sauna Gus (CALM) - Horizon",
-      "gusmester": "Kamille jacqueline Høgh Sørensen",
-      "availability": 17
-    },
     {
       "date": "2026-03-29",
       "startTime": "12:00",
