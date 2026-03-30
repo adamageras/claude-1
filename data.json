@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-03-30T11:32:17.683Z",
-  "sourceUpdatedAt": "2026-03-30T11:19:36.391Z",
+  "updatedAt": "2026-03-30T13:12:40.362Z",
+  "sourceUpdatedAt": "2026-03-30T12:49:26.572Z",
   "status": "ok",
   "count": 77,
   "items": [
@@ -18,7 +18,7 @@
       "endTime": "20:15",
       "product": "Sauna Gus (CALM) - Horizon",
       "gusmester": "Stine Harboe Petersen",
-      "availability": 24
+      "availability": 21
     },
     {
       "date": "2026-03-31",
@@ -98,7 +98,7 @@
       "endTime": "18:15",
       "product": "Sauna Gus (BOOST) - Horizon",
       "gusmester": "Anne Marie Petersen",
-      "availability": 25
+      "availability": 22
     },
     {
       "date": "2026-04-03",
