@@ -1,17 +1,9 @@
 {
-  "updatedAt": "2026-04-02T09:58:40.700Z",
-  "sourceUpdatedAt": "2026-04-02T09:49:26.464Z",
+  "updatedAt": "2026-04-02T10:58:22.342Z",
+  "sourceUpdatedAt": "2026-04-02T10:49:29.766Z",
   "status": "ok",
-  "count": 71,
+  "count": 70,
   "items": [
-    {
-      "date": "2026-04-02",
-      "startTime": "12:00",
-      "endTime": "13:15",
-      "product": "Sauna Gus (CALM) - Horizon",
-      "gusmester": "Benjamin Rubinstein",
-      "availability": 10
-    },
     {
       "date": "2026-04-02",
       "startTime": "14:00",
@@ -90,7 +82,7 @@
       "endTime": "19:15",
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "Nurit Hansen",
-      "availability": 26
+      "availability": 23
     },
     {
       "date": "2026-04-05",
@@ -170,7 +162,7 @@
       "endTime": "19:45",
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "Gretha Storm",
-      "availability": 25
+      "availability": 23
     },
     {
       "date": "2026-04-09",
