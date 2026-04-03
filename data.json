@@ -1,17 +1,9 @@
 {
-  "updatedAt": "2026-04-03T15:07:57.077Z",
-  "sourceUpdatedAt": "2026-04-03T14:49:31.273Z",
+  "updatedAt": "2026-04-03T15:59:33.939Z",
+  "sourceUpdatedAt": "2026-04-03T15:49:26.893Z",
   "status": "ok",
-  "count": 68,
+  "count": 67,
   "items": [
-    {
-      "date": "2026-04-03",
-      "startTime": "17:00",
-      "endTime": "18:15",
-      "product": "Sauna Gus (BOOST) - Horizon",
-      "gusmester": "Anne Marie Petersen",
-      "availability": 20
-    },
     {
       "date": "2026-04-03",
       "startTime": "19:00",
