@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-03T14:02:46.436Z",
-  "sourceUpdatedAt": "2026-04-03T13:49:24.129Z",
+  "updatedAt": "2026-04-03T15:07:57.077Z",
+  "sourceUpdatedAt": "2026-04-03T14:49:31.273Z",
   "status": "ok",
   "count": 68,
   "items": [
@@ -50,7 +50,7 @@
       "endTime": "19:15",
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "Nurit Hansen",
-      "availability": 27
+      "availability": 25
     },
     {
       "date": "2026-04-05",
@@ -66,7 +66,7 @@
       "endTime": "13:15",
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "Katelein Tang Züger",
-      "availability": 24
+      "availability": 22
     },
     {
       "date": "2026-04-06",
