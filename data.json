@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-07T19:04:01.828Z",
-  "sourceUpdatedAt": "2026-04-07T18:49:26.493Z",
+  "updatedAt": "2026-04-07T20:05:13.639Z",
+  "sourceUpdatedAt": "2026-04-07T19:49:28.908Z",
   "status": "ok",
   "count": 61,
   "items": [
@@ -26,7 +26,7 @@
       "endTime": "18:15",
       "product": "Sauna Gus (BOOST) - Horizon",
       "gusmester": "Mads Gøthler",
-      "availability": 24
+      "availability": 20
     },
     {
       "date": "2026-04-10",
