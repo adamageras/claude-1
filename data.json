@@ -1,17 +1,9 @@
 {
-  "updatedAt": "2026-04-07T15:53:52.328Z",
-  "sourceUpdatedAt": "2026-04-07T15:49:30.498Z",
+  "updatedAt": "2026-04-07T16:54:20.129Z",
+  "sourceUpdatedAt": "2026-04-07T16:49:26.874Z",
   "status": "ok",
-  "count": 62,
+  "count": 61,
   "items": [
-    {
-      "date": "2026-04-07",
-      "startTime": "18:00",
-      "endTime": "19:15",
-      "product": "Sauna Gus (CALM) - Horizon",
-      "gusmester": "Toke Emil Vig Juhl",
-      "availability": 15
-    },
     {
       "date": "2026-04-08",
       "startTime": "18:30",
