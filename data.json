@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-09T21:07:35.036Z",
-  "sourceUpdatedAt": "2026-04-09T20:57:25.172Z",
+  "updatedAt": "2026-04-09T22:03:46.830Z",
+  "sourceUpdatedAt": "2026-04-09T21:57:23.044Z",
   "status": "ok",
   "count": 65,
   "items": [
@@ -9,7 +9,7 @@
       "startTime": "17:00",
       "endTime": "18:15",
       "product": "Sauna Gus (BOOST) - Horizon",
-      "gusmester": "Mads Gøthler",
+      "gusmester": "Katelein Tang Züger",
       "availability": 18
     },
     {
@@ -314,7 +314,7 @@
       "endTime": "13:15",
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "Lise Korsholm",
-      "availability": 28
+      "availability": 27
     },
     {
       "date": "2026-04-26",
