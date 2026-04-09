@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-09T08:00:38.849Z",
-  "sourceUpdatedAt": "2026-04-09T07:49:30.169Z",
+  "updatedAt": "2026-04-09T09:47:29.562Z",
+  "sourceUpdatedAt": "2026-04-09T09:19:29.531Z",
   "status": "ok",
   "count": 66,
   "items": [
@@ -26,7 +26,7 @@
       "endTime": "20:15",
       "product": "Sauna Gus (HEAT & BEATS) - Horizon",
       "gusmester": "Gretha Storm",
-      "availability": 12
+      "availability": 11
     },
     {
       "date": "2026-04-11",
@@ -218,7 +218,7 @@
       "endTime": "20:15",
       "product": "Sauna Gus (CALM) - Horizon",
       "gusmester": "Toke Emil Vig Juhl",
-      "availability": 28
+      "availability": 19
     },
     {
       "date": "2026-04-21",
