@@ -1,17 +1,9 @@
 {
-  "updatedAt": "2026-04-11T13:53:58.862Z",
-  "sourceUpdatedAt": "2026-04-11T13:42:21.831Z",
+  "updatedAt": "2026-04-11T14:34:04.795Z",
+  "sourceUpdatedAt": "2026-04-11T14:27:20.755Z",
   "status": "ok",
-  "count": 64,
+  "count": 63,
   "items": [
-    {
-      "date": "2026-04-11",
-      "startTime": "16:00",
-      "endTime": "17:15",
-      "product": "Sauna Gus (BOOST) - Horizon",
-      "gusmester": "Frederik Winther Damsgaard",
-      "availability": 27
-    },
     {
       "date": "2026-04-11",
       "startTime": "18:00",
