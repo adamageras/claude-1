@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-11T10:30:30.342Z",
-  "sourceUpdatedAt": "2026-04-11T10:27:21.648Z",
+  "updatedAt": "2026-04-11T11:27:25.543Z",
+  "sourceUpdatedAt": "2026-04-11T11:27:21.952Z",
   "status": "ok",
   "count": 65,
   "items": [
@@ -26,7 +26,7 @@
       "endTime": "19:15",
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "Mette Korsholm",
-      "availability": 19
+      "availability": 16
     },
     {
       "date": "2026-04-12",
@@ -98,7 +98,7 @@
       "endTime": "19:15",
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "Tania Biil Petersen",
-      "availability": 16
+      "availability": 13
     },
     {
       "date": "2026-04-17",
