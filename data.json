@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-13T02:25:31.139Z",
-  "sourceUpdatedAt": "2026-04-13T02:12:23.300Z",
+  "updatedAt": "2026-04-13T05:26:44.680Z",
+  "sourceUpdatedAt": "2026-04-13T05:12:32.010Z",
   "status": "ok",
   "count": 59,
   "items": [
@@ -210,7 +210,7 @@
       "endTime": "15:15",
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "Stine Harboe Petersen",
-      "availability": 25
+      "availability": 24
     },
     {
       "date": "2026-04-25",
