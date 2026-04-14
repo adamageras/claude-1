@@ -1,17 +1,9 @@
 {
-  "updatedAt": "2026-04-14T14:59:52.510Z",
-  "sourceUpdatedAt": "2026-04-14T14:57:23.774Z",
+  "updatedAt": "2026-04-14T16:17:23.003Z",
+  "sourceUpdatedAt": "2026-04-14T16:12:23.007Z",
   "status": "ok",
-  "count": 54,
+  "count": 53,
   "items": [
-    {
-      "date": "2026-04-14",
-      "startTime": "18:00",
-      "endTime": "19:15",
-      "product": "Sauna Gus (CALM) - Horizon",
-      "gusmester": "Karoline Kobber Kristensen",
-      "availability": 20
-    },
     {
       "date": "2026-04-15",
       "startTime": "17:00",
