@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-14T13:20:00.521Z",
-  "sourceUpdatedAt": "2026-04-14T13:12:51.703Z",
+  "updatedAt": "2026-04-14T14:59:52.510Z",
+  "sourceUpdatedAt": "2026-04-14T14:57:23.774Z",
   "status": "ok",
   "count": 54,
   "items": [
@@ -42,7 +42,7 @@
       "endTime": "20:15",
       "product": "Sauna Gus (HEAT & BEATS) - Horizon",
       "gusmester": "Magnus Hyldahl Marker",
-      "availability": 27
+      "availability": 25
     },
     {
       "date": "2026-04-18",
@@ -50,7 +50,7 @@
       "endTime": "13:15",
       "product": "Sauna Gus (CALM) - Horizon",
       "gusmester": "Stine Harboe Petersen",
-      "availability": 14
+      "availability": 10
     },
     {
       "date": "2026-04-18",
@@ -154,7 +154,7 @@
       "endTime": "20:15",
       "product": "Sauna Gus (HEAT & BEATS) - Horizon",
       "gusmester": "Gretha Storm",
-      "availability": 10
+      "availability": 8
     },
     {
       "date": "2026-04-25",
