@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-04-14T09:21:57.923Z",
-  "sourceUpdatedAt": "2026-04-14T09:12:49.612Z",
-  "status": "ok",
+  "updatedAt": "2026-04-14T10:43:48.096Z",
+  "sourceUpdatedAt": "2026-04-14T10:27:22.497Z",
+  "status": "stale",
   "count": 54,
   "items": [
     {
@@ -436,5 +436,6 @@
       "gusmester": "",
       "availability": 30
     }
-  ]
+  ],
+  "message": "Bookspot available-products failed: HTTP 525."
 }
