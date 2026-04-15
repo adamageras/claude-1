@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-15T07:57:47.931Z",
-  "sourceUpdatedAt": "2026-04-15T07:57:26.883Z",
+  "updatedAt": "2026-04-15T09:24:50.036Z",
+  "sourceUpdatedAt": "2026-04-15T09:12:26.494Z",
   "status": "ok",
   "count": 53,
   "items": [
@@ -34,7 +34,7 @@
       "endTime": "20:15",
       "product": "Sauna Gus (HEAT & BEATS) - Horizon",
       "gusmester": "Magnus Hyldahl Marker",
-      "availability": 25
+      "availability": 19
     },
     {
       "date": "2026-04-18",
