@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-15T05:58:29.547Z",
-  "sourceUpdatedAt": "2026-04-15T05:57:24.729Z",
+  "updatedAt": "2026-04-15T07:57:47.931Z",
+  "sourceUpdatedAt": "2026-04-15T07:57:26.883Z",
   "status": "ok",
   "count": 53,
   "items": [
@@ -178,7 +178,7 @@
       "endTime": "19:15",
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "Nurit Hansen",
-      "availability": 24
+      "availability": 22
     },
     {
       "date": "2026-04-26",
