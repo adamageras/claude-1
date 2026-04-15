@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-15T17:38:00.823Z",
-  "sourceUpdatedAt": "2026-04-15T17:27:23.062Z",
+  "updatedAt": "2026-04-15T19:12:22.159Z",
+  "sourceUpdatedAt": "2026-04-15T18:57:25.128Z",
   "status": "ok",
   "count": 52,
   "items": [
@@ -178,7 +178,7 @@
       "endTime": "11:15",
       "product": "Sauna Gus (CALM) - Horizon",
       "gusmester": "Frederik Winther Damsgaard",
-      "availability": 30
+      "availability": 26
     },
     {
       "date": "2026-04-26",
