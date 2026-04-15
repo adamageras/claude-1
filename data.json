@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-15T16:02:32.413Z",
-  "sourceUpdatedAt": "2026-04-15T15:57:25.977Z",
+  "updatedAt": "2026-04-15T17:38:00.823Z",
+  "sourceUpdatedAt": "2026-04-15T17:27:23.062Z",
   "status": "ok",
   "count": 52,
   "items": [
@@ -42,7 +42,7 @@
       "endTime": "15:15",
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "Magnus Marker",
-      "availability": 30
+      "availability": 26
     },
     {
       "date": "2026-04-18",
