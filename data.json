@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-16T10:59:18.399Z",
-  "sourceUpdatedAt": "2026-04-16T10:57:23.207Z",
+  "updatedAt": "2026-04-16T12:04:07.879Z",
+  "sourceUpdatedAt": "2026-04-16T11:57:22.465Z",
   "status": "ok",
   "count": 52,
   "items": [
@@ -10,7 +10,7 @@
       "endTime": "19:15",
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "Tania Biil Petersen",
-      "availability": 6
+      "availability": 4
     },
     {
       "date": "2026-04-17",
