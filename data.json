@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-16T08:00:15.858Z",
-  "sourceUpdatedAt": "2026-04-16T07:57:22.939Z",
+  "updatedAt": "2026-04-16T09:54:47.371Z",
+  "sourceUpdatedAt": "2026-04-16T09:42:19.443Z",
   "status": "ok",
   "count": 52,
   "items": [
@@ -18,7 +18,7 @@
       "endTime": "18:15",
       "product": "Sauna Gus (BOOST) - Horizon",
       "gusmester": "Maria Fagranes Clemmensen",
-      "availability": 18
+      "availability": 16
     },
     {
       "date": "2026-04-17",
@@ -50,7 +50,7 @@
       "endTime": "17:15",
       "product": "Sauna Gus (BOOST) - Horizon",
       "gusmester": "Caroline Holm Oxfeldt",
-      "availability": 22
+      "availability": 20
     },
     {
       "date": "2026-04-18",
