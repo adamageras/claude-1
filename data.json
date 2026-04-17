@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-17T13:11:58.287Z",
-  "sourceUpdatedAt": "2026-04-17T12:57:23.429Z",
+  "updatedAt": "2026-04-17T14:39:21.891Z",
+  "sourceUpdatedAt": "2026-04-17T14:27:21.178Z",
   "status": "ok",
   "count": 51,
   "items": [
@@ -10,7 +10,7 @@
       "endTime": "18:15",
       "product": "Sauna Gus (BOOST) - Horizon",
       "gusmester": "Maria Fagranes Clemmensen",
-      "availability": 15
+      "availability": 13
     },
     {
       "date": "2026-04-17",
@@ -18,7 +18,7 @@
       "endTime": "20:15",
       "product": "Sauna Gus (HEAT & BEATS) - Horizon",
       "gusmester": "Magnus Hyldahl Marker",
-      "availability": 15
+      "availability": 13
     },
     {
       "date": "2026-04-18",
