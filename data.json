@@ -1,17 +1,9 @@
 {
-  "updatedAt": "2026-04-17T16:57:01.763Z",
-  "sourceUpdatedAt": "2026-04-17T16:42:25.973Z",
+  "updatedAt": "2026-04-17T17:51:13.729Z",
+  "sourceUpdatedAt": "2026-04-17T17:42:21.226Z",
   "status": "ok",
-  "count": 50,
+  "count": 49,
   "items": [
-    {
-      "date": "2026-04-17",
-      "startTime": "19:00",
-      "endTime": "20:15",
-      "product": "Sauna Gus (HEAT & BEATS) - Horizon",
-      "gusmester": "Magnus Hyldahl Marker",
-      "availability": 13
-    },
     {
       "date": "2026-04-18",
       "startTime": "12:00",
@@ -26,7 +18,7 @@
       "endTime": "15:15",
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "Magnus Marker",
-      "availability": 24
+      "availability": 22
     },
     {
       "date": "2026-04-18",
