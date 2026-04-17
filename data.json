@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-04-17T03:50:12.842Z",
-  "sourceUpdatedAt": "2026-04-17T03:42:20.822Z",
-  "status": "ok",
+  "updatedAt": "2026-04-17T06:00:55.252Z",
+  "sourceUpdatedAt": "2026-04-17T05:42:23.265Z",
+  "status": "stale",
   "count": 51,
   "items": [
     {
@@ -412,5 +412,6 @@
       "gusmester": "",
       "availability": 30
     }
-  ]
+  ],
+  "message": "Bookspot start-time-prices for product 17016 failed: HTTP 522."
 }
