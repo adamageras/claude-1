@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-17T08:10:44.234Z",
-  "sourceUpdatedAt": "2026-04-17T07:57:22.420Z",
+  "updatedAt": "2026-04-17T09:53:01.598Z",
+  "sourceUpdatedAt": "2026-04-17T09:42:24.510Z",
   "status": "ok",
   "count": 51,
   "items": [
@@ -10,7 +10,7 @@
       "endTime": "18:15",
       "product": "Sauna Gus (BOOST) - Horizon",
       "gusmester": "Maria Fagranes Clemmensen",
-      "availability": 16
+      "availability": 15
     },
     {
       "date": "2026-04-17",
