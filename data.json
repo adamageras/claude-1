@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-04-17T06:00:55.252Z",
-  "sourceUpdatedAt": "2026-04-17T05:42:23.265Z",
-  "status": "stale",
+  "updatedAt": "2026-04-17T08:10:44.234Z",
+  "sourceUpdatedAt": "2026-04-17T07:57:22.420Z",
+  "status": "ok",
   "count": 51,
   "items": [
     {
@@ -18,7 +18,7 @@
       "endTime": "20:15",
       "product": "Sauna Gus (HEAT & BEATS) - Horizon",
       "gusmester": "Magnus Hyldahl Marker",
-      "availability": 16
+      "availability": 15
     },
     {
       "date": "2026-04-18",
@@ -412,6 +412,5 @@
       "gusmester": "",
       "availability": 30
     }
-  ],
-  "message": "Bookspot start-time-prices for product 17016 failed: HTTP 522."
+  ]
 }
