@@ -1,17 +1,9 @@
 {
-  "updatedAt": "2026-04-18T14:00:31.638Z",
-  "sourceUpdatedAt": "2026-04-18T13:57:24.000Z",
+  "updatedAt": "2026-04-18T15:04:11.204Z",
+  "sourceUpdatedAt": "2026-04-18T14:57:21.189Z",
   "status": "ok",
-  "count": 46,
+  "count": 45,
   "items": [
-    {
-      "date": "2026-04-18",
-      "startTime": "16:00",
-      "endTime": "17:15",
-      "product": "Sauna Gus (BOOST) - Horizon",
-      "gusmester": "Caroline Holm Oxfeldt",
-      "availability": 14
-    },
     {
       "date": "2026-04-19",
       "startTime": "10:00",
