@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-19T05:14:55.397Z",
-  "sourceUpdatedAt": "2026-04-19T05:12:22.377Z",
+  "updatedAt": "2026-04-19T06:56:48.928Z",
+  "sourceUpdatedAt": "2026-04-19T06:42:22.761Z",
   "status": "ok",
   "count": 45,
   "items": [
@@ -18,7 +18,7 @@
       "endTime": "13:15",
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "Mette Korsholm",
-      "availability": 8
+      "availability": 6
     },
     {
       "date": "2026-04-19",
