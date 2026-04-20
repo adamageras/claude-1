@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-20T17:34:43.896Z",
-  "sourceUpdatedAt": "2026-04-20T17:27:27.079Z",
+  "updatedAt": "2026-04-20T19:00:16.709Z",
+  "sourceUpdatedAt": "2026-04-20T18:57:23.075Z",
   "status": "ok",
   "count": 42,
   "items": [
@@ -82,7 +82,7 @@
       "endTime": "17:15",
       "product": "Sauna Gus (BOOST) - Horizon",
       "gusmester": "Magnus Marker",
-      "availability": 30
+      "availability": 28
     },
     {
       "date": "2026-04-25",
