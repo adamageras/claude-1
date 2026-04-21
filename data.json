@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-21T16:57:05.002Z",
-  "sourceUpdatedAt": "2026-04-21T16:42:20.823Z",
+  "updatedAt": "2026-04-21T17:59:47.842Z",
+  "sourceUpdatedAt": "2026-04-21T17:57:22.435Z",
   "status": "ok",
   "count": 41,
   "items": [
@@ -106,7 +106,7 @@
       "endTime": "15:15",
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "Andreas Krabholm",
-      "availability": 23
+      "availability": 21
     },
     {
       "date": "2026-04-27",
