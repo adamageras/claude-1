@@ -1,17 +1,9 @@
 {
-  "updatedAt": "2026-04-21T17:59:47.842Z",
-  "sourceUpdatedAt": "2026-04-21T17:57:22.435Z",
+  "updatedAt": "2026-04-21T19:24:07.513Z",
+  "sourceUpdatedAt": "2026-04-21T19:12:23.247Z",
   "status": "ok",
-  "count": 41,
+  "count": 40,
   "items": [
-    {
-      "date": "2026-04-21",
-      "startTime": "20:00",
-      "endTime": "21:15",
-      "product": "Sauna Gus (FLOW) - Horizon",
-      "gusmester": "Karoline Kobber Kristensen",
-      "availability": 10
-    },
     {
       "date": "2026-04-22",
       "startTime": "18:30",
@@ -74,7 +66,7 @@
       "endTime": "17:15",
       "product": "Sauna Gus (BOOST) - Horizon",
       "gusmester": "Magnus Marker",
-      "availability": 28
+      "availability": 26
     },
     {
       "date": "2026-04-25",
@@ -146,7 +138,7 @@
       "endTime": "21:15",
       "product": "Sauna Gus (CALM) - Horizon",
       "gusmester": "Toke Emil Vig Juhl",
-      "availability": 30
+      "availability": 28
     },
     {
       "date": "2026-05-02",
@@ -290,7 +282,7 @@
       "endTime": "15:15",
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "Anne Marie Petersen",
-      "availability": 30
+      "availability": 28
     },
     {
       "date": "2026-05-09",
