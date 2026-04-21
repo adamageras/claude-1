@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-21T19:24:07.513Z",
-  "sourceUpdatedAt": "2026-04-21T19:12:23.247Z",
+  "updatedAt": "2026-04-21T20:26:39.758Z",
+  "sourceUpdatedAt": "2026-04-21T20:12:22.337Z",
   "status": "ok",
   "count": 40,
   "items": [
@@ -66,7 +66,7 @@
       "endTime": "17:15",
       "product": "Sauna Gus (BOOST) - Horizon",
       "gusmester": "Magnus Marker",
-      "availability": 26
+      "availability": 25
     },
     {
       "date": "2026-04-25",
@@ -138,7 +138,7 @@
       "endTime": "21:15",
       "product": "Sauna Gus (CALM) - Horizon",
       "gusmester": "Toke Emil Vig Juhl",
-      "availability": 28
+      "availability": 30
     },
     {
       "date": "2026-05-02",
