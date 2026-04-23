@@ -1,17 +1,9 @@
 {
-  "updatedAt": "2026-04-23T18:08:57.327Z",
-  "sourceUpdatedAt": "2026-04-23T17:57:21.542Z",
+  "updatedAt": "2026-04-23T19:49:10.728Z",
+  "sourceUpdatedAt": "2026-04-23T19:42:32.706Z",
   "status": "ok",
-  "count": 38,
+  "count": 37,
   "items": [
-    {
-      "date": "2026-04-23",
-      "startTime": "20:00",
-      "endTime": "21:15",
-      "product": "Sauna Gus (CALM) - Horizon",
-      "gusmester": "Mette Korsholm",
-      "availability": 13
-    },
     {
       "date": "2026-04-24",
       "startTime": "17:00",
@@ -122,7 +114,7 @@
       "endTime": "21:15",
       "product": "Sauna Gus (CALM) - Horizon",
       "gusmester": "Toke Emil Vig Juhl",
-      "availability": 28
+      "availability": 30
     },
     {
       "date": "2026-05-02",
@@ -130,7 +122,7 @@
       "endTime": "13:15",
       "product": "Sauna Gus (CALM) - Horizon",
       "gusmester": "Caroline Holm Oxfeldt",
-      "availability": 30
+      "availability": 25
     },
     {
       "date": "2026-05-02",
