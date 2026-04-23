@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-23T11:38:04.695Z",
-  "sourceUpdatedAt": "2026-04-23T11:27:22.219Z",
+  "updatedAt": "2026-04-23T13:21:13.377Z",
+  "sourceUpdatedAt": "2026-04-23T13:12:22.534Z",
   "status": "ok",
   "count": 39,
   "items": [
@@ -18,7 +18,7 @@
       "endTime": "21:15",
       "product": "Sauna Gus (CALM) - Horizon",
       "gusmester": "Mette Korsholm",
-      "availability": 19
+      "availability": 15
     },
     {
       "date": "2026-04-24",
@@ -234,7 +234,7 @@
       "endTime": "19:15",
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "Magnus Hyldahl Marker",
-      "availability": 29
+      "availability": 28
     },
     {
       "date": "2026-05-07",
