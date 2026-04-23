@@ -1,17 +1,9 @@
 {
-  "updatedAt": "2026-04-23T13:21:13.377Z",
-  "sourceUpdatedAt": "2026-04-23T13:12:22.534Z",
+  "updatedAt": "2026-04-23T16:58:34.152Z",
+  "sourceUpdatedAt": "2026-04-23T16:57:23.217Z",
   "status": "ok",
-  "count": 39,
+  "count": 38,
   "items": [
-    {
-      "date": "2026-04-23",
-      "startTime": "18:00",
-      "endTime": "19:15",
-      "product": "Sauna Gus (FLOW) - Horizon",
-      "gusmester": "Kamille jacqueline Høgh Sørensen",
-      "availability": 19
-    },
     {
       "date": "2026-04-23",
       "startTime": "20:00",
@@ -234,7 +226,7 @@
       "endTime": "19:15",
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "Magnus Hyldahl Marker",
-      "availability": 28
+      "availability": 26
     },
     {
       "date": "2026-05-07",
@@ -290,7 +282,7 @@
       "endTime": "19:15",
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "Kamille jacqueline Høgh Sørensen",
-      "availability": 30
+      "availability": 28
     },
     {
       "date": "2026-05-10",
@@ -298,7 +290,7 @@
       "endTime": "11:15",
       "product": "Sauna Gus (CALM) - Horizon",
       "gusmester": "Stine Harboe Petersen",
-      "availability": 30
+      "availability": 28
     },
     {
       "date": "2026-05-10",
