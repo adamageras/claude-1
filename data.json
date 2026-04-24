@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-24T17:28:48.881Z",
-  "sourceUpdatedAt": "2026-04-24T17:27:22.754Z",
+  "updatedAt": "2026-04-24T18:06:57.469Z",
+  "sourceUpdatedAt": "2026-04-24T17:57:28.075Z",
   "status": "ok",
   "count": 35,
   "items": [
@@ -10,7 +10,7 @@
       "endTime": "13:15",
       "product": "Sauna Gus (CALM) - Horizon",
       "gusmester": "Mette Korsholm",
-      "availability": 29
+      "availability": 27
     },
     {
       "date": "2026-04-25",
