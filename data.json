@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-28T17:10:29.431Z",
-  "sourceUpdatedAt": "2026-04-28T16:57:30.124Z",
+  "updatedAt": "2026-04-28T19:05:08.209Z",
+  "sourceUpdatedAt": "2026-04-28T18:57:20.948Z",
   "status": "ok",
   "count": 26,
   "items": [
@@ -10,7 +10,7 @@
       "endTime": "19:45",
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "Gretha Storm",
-      "availability": 14
+      "availability": 12
     },
     {
       "date": "2026-04-30",
@@ -130,7 +130,7 @@
       "endTime": "19:15",
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "Magnus Hyldahl Marker",
-      "availability": 26
+      "availability": 25
     },
     {
       "date": "2026-05-07",
