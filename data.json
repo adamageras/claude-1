@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-01T19:14:55.593Z",
-  "sourceUpdatedAt": "2026-05-01T19:12:21.365Z",
+  "updatedAt": "2026-05-01T20:14:18.428Z",
+  "sourceUpdatedAt": "2026-05-01T20:12:19.889Z",
   "status": "ok",
   "count": 23,
   "items": [
@@ -74,7 +74,7 @@
       "endTime": "20:15",
       "product": "Sauna Gus (CALM) - Horizon",
       "gusmester": "Julie Katrine Skakon",
-      "availability": 30
+      "availability": 23
     },
     {
       "date": "2026-05-05",
