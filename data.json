@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-01T06:13:29.784Z",
-  "sourceUpdatedAt": "2026-05-01T06:12:36.146Z",
+  "updatedAt": "2026-05-01T08:28:07.988Z",
+  "sourceUpdatedAt": "2026-05-01T08:27:22.384Z",
   "status": "ok",
   "count": 23,
   "items": [
@@ -26,7 +26,7 @@
       "endTime": "17:15",
       "product": "Sauna Gus (BOOST) - Horizon",
       "gusmester": "Jostein Waagen",
-      "availability": 25
+      "availability": 21
     },
     {
       "date": "2026-05-02",
@@ -58,7 +58,7 @@
       "endTime": "15:15",
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "Andreas Krabholm",
-      "availability": 9
+      "availability": 8
     },
     {
       "date": "2026-05-04",
