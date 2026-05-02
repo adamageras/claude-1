@@ -1,17 +1,9 @@
 {
-  "updatedAt": "2026-05-02T11:41:46.564Z",
-  "sourceUpdatedAt": "2026-05-02T11:27:19.574Z",
+  "updatedAt": "2026-05-02T13:03:20.309Z",
+  "sourceUpdatedAt": "2026-05-02T12:57:19.953Z",
   "status": "ok",
-  "count": 22,
+  "count": 21,
   "items": [
-    {
-      "date": "2026-05-02",
-      "startTime": "14:00",
-      "endTime": "15:15",
-      "product": "Sauna Gus (FLOW) - Horizon",
-      "gusmester": "Mads Gøthler",
-      "availability": 20
-    },
     {
       "date": "2026-05-02",
       "startTime": "16:00",
