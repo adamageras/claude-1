@@ -1,17 +1,9 @@
 {
-  "updatedAt": "2026-05-03T07:58:29.134Z",
-  "sourceUpdatedAt": "2026-05-03T07:57:18.065Z",
+  "updatedAt": "2026-05-03T09:25:29.503Z",
+  "sourceUpdatedAt": "2026-05-03T09:12:19.588Z",
   "status": "ok",
-  "count": 19,
+  "count": 18,
   "items": [
-    {
-      "date": "2026-05-03",
-      "startTime": "10:00",
-      "endTime": "11:15",
-      "product": "Sauna Gus (CALM) - Horizon",
-      "gusmester": "Caroline Holm Oxfeldt",
-      "availability": 20
-    },
     {
       "date": "2026-05-03",
       "startTime": "12:00",
