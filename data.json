@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-04T02:34:34.966Z",
-  "sourceUpdatedAt": "2026-05-04T02:27:17.998Z",
+  "updatedAt": "2026-05-04T06:09:14.354Z",
+  "sourceUpdatedAt": "2026-05-04T05:57:18.859Z",
   "status": "ok",
   "count": 16,
   "items": [
@@ -58,7 +58,7 @@
       "endTime": "21:15",
       "product": "Sauna Gus (CALM) - Horizon",
       "gusmester": "Maria Fagranes Clemmensen",
-      "availability": 23
+      "availability": 22
     },
     {
       "date": "2026-05-08",
