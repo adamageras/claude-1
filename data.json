@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-04T17:12:50.791Z",
-  "sourceUpdatedAt": "2026-05-04T17:12:17.562Z",
+  "updatedAt": "2026-05-04T19:02:32.441Z",
+  "sourceUpdatedAt": "2026-05-04T18:57:23.464Z",
   "status": "ok",
   "count": 14,
   "items": [
@@ -82,7 +82,7 @@
       "endTime": "17:15",
       "product": "Sauna Gus (BOOST) - Horizon",
       "gusmester": "Jostein Waagen",
-      "availability": 30
+      "availability": 29
     },
     {
       "date": "2026-05-09",
