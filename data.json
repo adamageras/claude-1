@@ -1,17 +1,9 @@
 {
-  "updatedAt": "2026-05-04T15:28:52.233Z",
-  "sourceUpdatedAt": "2026-05-04T15:27:22.093Z",
+  "updatedAt": "2026-05-04T17:12:50.791Z",
+  "sourceUpdatedAt": "2026-05-04T17:12:17.562Z",
   "status": "ok",
-  "count": 15,
+  "count": 14,
   "items": [
-    {
-      "date": "2026-05-04",
-      "startTime": "19:00",
-      "endTime": "20:15",
-      "product": "Sauna Gus (CALM) - Horizon",
-      "gusmester": "Julie Katrine Skakon",
-      "availability": 14
-    },
     {
       "date": "2026-05-05",
       "startTime": "18:00",
@@ -66,7 +58,7 @@
       "endTime": "20:15",
       "product": "Sauna Gus (HEAT & BEATS) - Horizon",
       "gusmester": "Gus",
-      "availability": 30
+      "availability": 24
     },
     {
       "date": "2026-05-09",
