@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-05T02:54:19.383Z",
-  "sourceUpdatedAt": "2026-05-05T02:42:22.454Z",
+  "updatedAt": "2026-05-05T05:40:09.380Z",
+  "sourceUpdatedAt": "2026-05-05T05:27:18.675Z",
   "status": "ok",
   "count": 14,
   "items": [
@@ -10,7 +10,7 @@
       "endTime": "19:15",
       "product": "Sauna Gus (CALM) - Horizon",
       "gusmester": "Thomas Frank",
-      "availability": 29
+      "availability": 27
     },
     {
       "date": "2026-05-05",
