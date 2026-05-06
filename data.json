@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-06T20:08:50.911Z",
-  "sourceUpdatedAt": "2026-05-06T19:57:18.799Z",
+  "updatedAt": "2026-05-06T21:39:26.067Z",
+  "sourceUpdatedAt": "2026-05-06T21:27:17.094Z",
   "status": "ok",
   "count": 11,
   "items": [
@@ -34,7 +34,7 @@
       "endTime": "20:15",
       "product": "Sauna Gus (HEAT & BEATS) - Horizon",
       "gusmester": "Caroline Holm Oxfeldt",
-      "availability": 24
+      "availability": 22
     },
     {
       "date": "2026-05-09",
