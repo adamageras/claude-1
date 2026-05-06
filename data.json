@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-06T18:24:29.994Z",
-  "sourceUpdatedAt": "2026-05-06T18:12:20.623Z",
+  "updatedAt": "2026-05-06T20:08:50.911Z",
+  "sourceUpdatedAt": "2026-05-06T19:57:18.799Z",
   "status": "ok",
   "count": 11,
   "items": [
@@ -66,7 +66,7 @@
       "endTime": "19:15",
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "Jostein Waagen",
-      "availability": 25
+      "availability": 23
     },
     {
       "date": "2026-05-10",
