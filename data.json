@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-14T06:22:15.176Z",
-  "sourceUpdatedAt": "2026-05-14T06:12:18.384Z",
+  "updatedAt": "2026-05-14T09:13:34.835Z",
+  "sourceUpdatedAt": "2026-05-14T09:12:18.505Z",
   "status": "ok",
   "count": 26,
   "items": [
@@ -10,7 +10,7 @@
       "endTime": "19:15",
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "Katelein Tang Züger",
-      "availability": 24
+      "availability": 21
     },
     {
       "date": "2026-05-16",
