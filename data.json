@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-14T13:13:20.901Z",
-  "sourceUpdatedAt": "2026-05-14T13:12:20.201Z",
+  "updatedAt": "2026-05-14T15:39:53.022Z",
+  "sourceUpdatedAt": "2026-05-14T15:27:23.689Z",
   "status": "ok",
   "count": 26,
   "items": [
@@ -10,7 +10,7 @@
       "endTime": "19:15",
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "Katelein Tang Züger",
-      "availability": 21
+      "availability": 19
     },
     {
       "date": "2026-05-16",
@@ -82,7 +82,7 @@
       "endTime": "19:15",
       "product": "Sauna Gus (CALM) - Horizon",
       "gusmester": "Gretha Storm",
-      "availability": 28
+      "availability": 27
     },
     {
       "date": "2026-05-26",
