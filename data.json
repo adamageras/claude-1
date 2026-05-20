@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-20T20:09:55.996Z",
-  "sourceUpdatedAt": "2026-05-20T19:57:22.693Z",
+  "updatedAt": "2026-05-20T22:09:35.904Z",
+  "sourceUpdatedAt": "2026-05-20T21:57:19.438Z",
   "status": "ok",
   "count": 26,
   "items": [
@@ -10,7 +10,7 @@
       "endTime": "19:15",
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "Anne Marie Petersen",
-      "availability": 22
+      "availability": 21
     },
     {
       "date": "2026-05-23",
@@ -34,7 +34,7 @@
       "endTime": "19:15",
       "product": "Sauna Gus (CALM) - Horizon",
       "gusmester": "Gretha Storm",
-      "availability": 20
+      "availability": 17
     },
     {
       "date": "2026-05-26",
