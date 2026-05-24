@@ -1,17 +1,9 @@
 {
-  "updatedAt": "2026-05-24T11:48:28.327Z",
-  "sourceUpdatedAt": "2026-05-24T11:42:18.751Z",
+  "updatedAt": "2026-05-24T13:18:26.548Z",
+  "sourceUpdatedAt": "2026-05-24T13:12:20.949Z",
   "status": "ok",
-  "count": 29,
+  "count": 28,
   "items": [
-    {
-      "date": "2026-05-24",
-      "startTime": "14:00",
-      "endTime": "15:15",
-      "product": "Sauna Gus (CALM) - Horizon",
-      "gusmester": "",
-      "availability": 0
-    },
     {
       "date": "2026-05-24",
       "startTime": "18:00",
