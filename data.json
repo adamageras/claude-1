@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-01T18:35:10.421Z",
-  "sourceUpdatedAt": "2026-06-01T18:27:16.574Z",
+  "updatedAt": "2026-06-01T21:58:06.115Z",
+  "sourceUpdatedAt": "2026-06-01T21:57:18.859Z",
   "status": "ok",
   "count": 19,
   "items": [
@@ -34,7 +34,7 @@
       "endTime": "13:15",
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "Gusmester Lise Korsholm",
-      "availability": 15
+      "availability": 13
     },
     {
       "date": "2026-06-07",
@@ -81,7 +81,7 @@
       "startTime": "12:00",
       "endTime": "13:15",
       "product": "Sauna Gus (FLOW) - Horizon",
-      "gusmester": "Caroline Holm Oxfeldt",
+      "gusmester": "Anne Marie Petersen",
       "availability": 30
     },
     {
