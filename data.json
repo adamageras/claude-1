@@ -1,17 +1,9 @@
 {
-  "updatedAt": "2026-06-04T15:57:47.803Z",
-  "sourceUpdatedAt": "2026-06-04T15:57:17.170Z",
+  "updatedAt": "2026-06-04T18:21:07.513Z",
+  "sourceUpdatedAt": "2026-06-04T18:12:16.805Z",
   "status": "ok",
-  "count": 24,
+  "count": 23,
   "items": [
-    {
-      "date": "2026-06-04",
-      "startTime": "18:00",
-      "endTime": "19:15",
-      "product": "Sauna Gus (FLOW) - Horizon",
-      "gusmester": "Gusmester Anne Marie Petersen",
-      "availability": 19
-    },
     {
       "date": "2026-06-06",
       "startTime": "12:00",
