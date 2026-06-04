@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-04T20:31:00.138Z",
-  "sourceUpdatedAt": "2026-06-04T20:12:18.186Z",
-  "status": "stale",
-  "count": 23,
+  "updatedAt": "2026-06-04T22:18:01.061Z",
+  "sourceUpdatedAt": "2026-06-04T22:12:16.510Z",
+  "status": "ok",
+  "count": 24,
   "items": [
     {
       "date": "2026-06-06",
@@ -187,7 +187,14 @@
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "",
       "availability": 30
+    },
+    {
+      "date": "2026-07-05",
+      "startTime": "14:00",
+      "endTime": "15:15",
+      "product": "Sauna Gus (CALM) - Horizon",
+      "gusmester": "",
+      "availability": 30
     }
-  ],
-  "message": "Bookspot start-time-prices for product 17016 failed: HTTP 520."
+  ]
 }
