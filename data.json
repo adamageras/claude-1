@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-06-04T18:21:07.513Z",
-  "sourceUpdatedAt": "2026-06-04T18:12:16.805Z",
-  "status": "ok",
+  "updatedAt": "2026-06-04T20:31:00.138Z",
+  "sourceUpdatedAt": "2026-06-04T20:12:18.186Z",
+  "status": "stale",
   "count": 23,
   "items": [
     {
@@ -82,7 +82,7 @@
       "endTime": "19:15",
       "product": "Sauna Gus (CALM) - Horizon",
       "gusmester": "Andreas Krabholm",
-      "availability": 30
+      "availability": 28
     },
     {
       "date": "2026-06-17",
@@ -188,5 +188,6 @@
       "gusmester": "",
       "availability": 30
     }
-  ]
+  ],
+  "message": "Bookspot start-time-prices for product 17016 failed: HTTP 520."
 }
