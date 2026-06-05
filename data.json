@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-05T11:24:06.086Z",
-  "sourceUpdatedAt": "2026-06-05T11:12:19.808Z",
+  "updatedAt": "2026-06-05T14:05:17.719Z",
+  "sourceUpdatedAt": "2026-06-05T13:57:24.993Z",
   "status": "ok",
   "count": 24,
   "items": [
@@ -50,7 +50,7 @@
       "endTime": "19:15",
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "Magnus Hyldahl Marker",
-      "availability": 28
+      "availability": 26
     },
     {
       "date": "2026-06-13",
