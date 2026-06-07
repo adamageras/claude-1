@@ -1,17 +1,9 @@
 {
-  "updatedAt": "2026-06-07T11:06:39.564Z",
-  "sourceUpdatedAt": "2026-06-07T10:57:17.232Z",
+  "updatedAt": "2026-06-07T12:58:50.143Z",
+  "sourceUpdatedAt": "2026-06-07T12:57:17.975Z",
   "status": "ok",
-  "count": 23,
+  "count": 22,
   "items": [
-    {
-      "date": "2026-06-07",
-      "startTime": "18:00",
-      "endTime": "19:15",
-      "product": "Sauna Gus (CALM) - Horizon",
-      "gusmester": "Katelein Tang Züger",
-      "availability": 7
-    },
     {
       "date": "2026-06-09",
       "startTime": "18:00",
