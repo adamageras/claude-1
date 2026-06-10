@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-10T20:25:16.690Z",
-  "sourceUpdatedAt": "2026-06-10T20:12:19.495Z",
+  "updatedAt": "2026-06-10T22:26:04.607Z",
+  "sourceUpdatedAt": "2026-06-10T22:12:18.115Z",
   "status": "ok",
-  "count": 17,
+  "count": 18,
   "items": [
     {
       "date": "2026-06-11",
@@ -138,6 +138,14 @@
       "endTime": "19:15",
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "Kamille jacqueline Høgh Sørensen",
+      "availability": 30
+    },
+    {
+      "date": "2026-07-11",
+      "startTime": "12:00",
+      "endTime": "13:15",
+      "product": "Sauna Gus (FLOW) - Horizon",
+      "gusmester": "Stine Harboe Petersen",
       "availability": 30
     }
   ]
