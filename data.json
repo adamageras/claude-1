@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-10T10:38:52.933Z",
-  "sourceUpdatedAt": "2026-06-10T10:27:16.840Z",
+  "updatedAt": "2026-06-10T14:20:00.282Z",
+  "sourceUpdatedAt": "2026-06-10T14:12:23.217Z",
   "status": "ok",
-  "count": 21,
+  "count": 18,
   "items": [
     {
       "date": "2026-06-10",
@@ -21,28 +21,12 @@
       "availability": 22
     },
     {
-      "date": "2026-06-14",
-      "startTime": "14:00",
-      "endTime": "15:15",
-      "product": "Sauna Gus (CALM) - Horizon",
-      "gusmester": "Andreas Krabholm",
-      "availability": 26
-    },
-    {
-      "date": "2026-06-14",
-      "startTime": "18:00",
-      "endTime": "19:15",
-      "product": "Sauna Gus (CALM) - Horizon",
-      "gusmester": "Mads Gøthler",
-      "availability": 19
-    },
-    {
       "date": "2026-06-16",
       "startTime": "18:00",
       "endTime": "19:15",
       "product": "Sauna Gus (CALM) - Horizon",
       "gusmester": "Andreas Krabholm",
-      "availability": 28
+      "availability": 27
     },
     {
       "date": "2026-06-17",
@@ -74,15 +58,7 @@
       "endTime": "15:15",
       "product": "Sauna Gus (CALM) - Horizon",
       "gusmester": "Andreas Krabholm",
-      "availability": 30
-    },
-    {
-      "date": "2026-06-21",
-      "startTime": "14:00",
-      "endTime": "15:15",
-      "product": "Sauna Gus (CALM) - Horizon",
-      "gusmester": "Stine Harboe Petersen",
-      "availability": 27
+      "availability": 28
     },
     {
       "date": "2026-06-21",
@@ -97,7 +73,7 @@
       "startTime": "18:00",
       "endTime": "19:15",
       "product": "Sauna Gus (CALM) - Horizon",
-      "gusmester": "",
+      "gusmester": "Andreas Krabholm",
       "availability": 30
     },
     {
@@ -105,7 +81,7 @@
       "startTime": "18:00",
       "endTime": "19:15",
       "product": "Sauna Gus (FLOW) - Horizon",
-      "gusmester": "",
+      "gusmester": "Caroline Holm Oxfeldt",
       "availability": 30
     },
     {
@@ -113,15 +89,15 @@
       "startTime": "12:00",
       "endTime": "13:15",
       "product": "Sauna Gus (FLOW) - Horizon",
-      "gusmester": "",
+      "gusmester": "Jostein Waagen",
       "availability": 30
     },
     {
       "date": "2026-06-28",
-      "startTime": "14:00",
-      "endTime": "15:15",
+      "startTime": "12:00",
+      "endTime": "13:15",
       "product": "Sauna Gus (CALM) - Horizon",
-      "gusmester": "",
+      "gusmester": "Andreas Krabholm",
       "availability": 30
     },
     {
@@ -129,7 +105,7 @@
       "startTime": "18:00",
       "endTime": "19:15",
       "product": "Sauna Gus (CALM) - Horizon",
-      "gusmester": "",
+      "gusmester": "Andreas Krabholm",
       "availability": 30
     },
     {
@@ -137,7 +113,7 @@
       "startTime": "18:00",
       "endTime": "19:15",
       "product": "Sauna Gus (FLOW) - Horizon",
-      "gusmester": "",
+      "gusmester": "Katelein Tang Züger",
       "availability": 30
     },
     {
@@ -145,15 +121,15 @@
       "startTime": "12:00",
       "endTime": "13:15",
       "product": "Sauna Gus (FLOW) - Horizon",
-      "gusmester": "",
+      "gusmester": "Magnus Hyldahl Marker",
       "availability": 30
     },
     {
       "date": "2026-07-05",
-      "startTime": "14:00",
-      "endTime": "15:15",
+      "startTime": "12:00",
+      "endTime": "13:15",
       "product": "Sauna Gus (CALM) - Horizon",
-      "gusmester": "",
+      "gusmester": "Andreas Krabholm",
       "availability": 30
     },
     {
@@ -161,7 +137,7 @@
       "startTime": "18:00",
       "endTime": "19:15",
       "product": "Sauna Gus (CALM) - Horizon",
-      "gusmester": "",
+      "gusmester": "Andreas Krabholm",
       "availability": 30
     },
     {
@@ -169,7 +145,7 @@
       "startTime": "18:00",
       "endTime": "19:15",
       "product": "Sauna Gus (FLOW) - Horizon",
-      "gusmester": "",
+      "gusmester": "Kamille jacqueline Høgh Sørensen",
       "availability": 30
     }
   ]
