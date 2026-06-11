@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-11T08:42:12.155Z",
-  "sourceUpdatedAt": "2026-06-11T08:27:19.807Z",
-  "status": "ok",
-  "count": 18,
+  "updatedAt": "2026-06-11T12:41:52.794Z",
+  "sourceUpdatedAt": "2026-06-11T12:12:17.847Z",
+  "status": "stale",
+  "count": 22,
   "items": [
     {
       "date": "2026-06-11",
@@ -10,7 +10,31 @@
       "endTime": "19:15",
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "Magnus Hyldahl Marker",
-      "availability": 22
+      "availability": 20
+    },
+    {
+      "date": "2026-06-13",
+      "startTime": "12:00",
+      "endTime": "13:15",
+      "product": "Sauna Gus (FLOW) - Horizon",
+      "gusmester": "Anne Marie Petersen",
+      "availability": 30
+    },
+    {
+      "date": "2026-06-14",
+      "startTime": "14:00",
+      "endTime": "15:15",
+      "product": "Sauna Gus (CALM) - Horizon",
+      "gusmester": "Andreas Krabholm",
+      "availability": 26
+    },
+    {
+      "date": "2026-06-14",
+      "startTime": "18:00",
+      "endTime": "19:15",
+      "product": "Sauna Gus (CALM) - Horizon",
+      "gusmester": "Mads Gøthler",
+      "availability": 19
     },
     {
       "date": "2026-06-16",
@@ -51,6 +75,14 @@
       "product": "Sauna Gus (CALM) - Horizon",
       "gusmester": "Andreas Krabholm",
       "availability": 28
+    },
+    {
+      "date": "2026-06-21",
+      "startTime": "14:00",
+      "endTime": "15:15",
+      "product": "Sauna Gus (CALM) - Horizon",
+      "gusmester": "Stine Harboe Petersen",
+      "availability": 27
     },
     {
       "date": "2026-06-21",
@@ -148,5 +180,6 @@
       "gusmester": "Stine Harboe Petersen",
       "availability": 30
     }
-  ]
+  ],
+  "message": "Bookspot start-time-prices for product 17016 failed: HTTP 520."
 }
