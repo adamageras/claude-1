@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-22T03:52:42.757Z",
-  "sourceUpdatedAt": "2026-06-22T03:42:15.209Z",
+  "updatedAt": "2026-06-22T09:45:39.716Z",
+  "sourceUpdatedAt": "2026-06-22T09:42:16.468Z",
   "status": "ok",
-  "count": 17,
+  "count": 21,
   "items": [
     {
       "date": "2026-06-23",
@@ -61,6 +61,14 @@
       "availability": 30
     },
     {
+      "date": "2026-07-01",
+      "startTime": "18:00",
+      "endTime": "19:15",
+      "product": "Sauna Gus (FLOW) - Horizon",
+      "gusmester": "Gretha Storm",
+      "availability": 30
+    },
+    {
       "date": "2026-07-02",
       "startTime": "18:00",
       "endTime": "19:15",
@@ -85,11 +93,27 @@
       "availability": 25
     },
     {
+      "date": "2026-07-05",
+      "startTime": "18:00",
+      "endTime": "19:15",
+      "product": "Sauna Gus (CALM) - Horizon",
+      "gusmester": "Gretha Storm",
+      "availability": 30
+    },
+    {
       "date": "2026-07-07",
       "startTime": "18:00",
       "endTime": "19:15",
       "product": "Sauna Gus (CALM) - Horizon",
       "gusmester": "Andreas Krabholm",
+      "availability": 30
+    },
+    {
+      "date": "2026-07-08",
+      "startTime": "18:00",
+      "endTime": "19:15",
+      "product": "Sauna Gus (FLOW) - Horizon",
+      "gusmester": "Gretha Storm",
       "availability": 30
     },
     {
@@ -115,6 +139,14 @@
       "product": "Sauna Gus (CALM) - Horizon",
       "gusmester": "Andreas Krabholm",
       "availability": 27
+    },
+    {
+      "date": "2026-07-12",
+      "startTime": "18:00",
+      "endTime": "19:15",
+      "product": "Sauna Gus (CALM) - Horizon",
+      "gusmester": "Gretha Storm",
+      "availability": 30
     },
     {
       "date": "2026-07-14",
