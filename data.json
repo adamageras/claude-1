@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-30T18:18:02.618Z",
-  "sourceUpdatedAt": "2026-06-30T18:12:17.334Z",
+  "updatedAt": "2026-06-30T20:27:42.350Z",
+  "sourceUpdatedAt": "2026-06-30T20:27:20.387Z",
   "status": "ok",
   "count": 16,
   "items": [
@@ -34,7 +34,7 @@
       "endTime": "13:15",
       "product": "Sauna Gus (CALM) - Horizon",
       "gusmester": "Andreas Krabholm",
-      "availability": 25
+      "availability": 21
     },
     {
       "date": "2026-07-05",
