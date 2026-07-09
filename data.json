@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-09T05:34:43.117Z",
-  "sourceUpdatedAt": "2026-07-09T05:27:17.342Z",
+  "updatedAt": "2026-07-09T09:32:04.336Z",
+  "sourceUpdatedAt": "2026-07-09T09:27:25.528Z",
   "status": "ok",
   "count": 11,
   "items": [
@@ -10,7 +10,7 @@
       "endTime": "19:15",
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "Kamille jacqueline Høgh Sørensen",
-      "availability": 26
+      "availability": 23
     },
     {
       "date": "2026-07-11",
@@ -42,7 +42,7 @@
       "endTime": "19:15",
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "Magnus Hyldahl Marker",
-      "availability": 30
+      "availability": 22
     },
     {
       "date": "2026-07-18",
