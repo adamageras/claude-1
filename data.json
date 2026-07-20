@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-07-20T15:26:57.064Z",
-  "sourceUpdatedAt": "2026-07-20T15:12:17.147Z",
-  "status": "ok",
+  "updatedAt": "2026-07-20T16:55:57.306Z",
+  "sourceUpdatedAt": "2026-07-20T16:27:15.854Z",
+  "status": "stale",
   "count": 12,
   "items": [
     {
@@ -100,5 +100,6 @@
       "gusmester": "Gretha Storm",
       "availability": 30
     }
-  ]
+  ],
+  "message": "Bookspot availability for product 17016 failed: HTTP 504."
 }
