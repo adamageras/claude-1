@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-12T06:51:57.503Z",
-  "sourceUpdatedAt": "2026-08-12T06:40:50.959Z",
+  "updatedAt": "2026-08-12T09:39:20.805Z",
+  "sourceUpdatedAt": "2026-08-12T09:25:51.268Z",
   "status": "ok",
   "count": 11,
   "items": [
@@ -10,7 +10,7 @@
       "endTime": "19:15",
       "product": "Sauna Gus (FLOW) - Horizon",
       "gusmester": "Gretha Storm",
-      "availability": 23
+      "availability": 22
     },
     {
       "date": "2026-08-16",
