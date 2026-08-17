@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-08-17T20:52:13.893Z",
-  "sourceUpdatedAt": "2026-08-17T20:25:50.087Z",
-  "status": "stale",
+  "updatedAt": "2026-08-17T21:21:27.885Z",
+  "sourceUpdatedAt": "2026-08-17T21:10:50.559Z",
+  "status": "ok",
   "count": 18,
   "items": [
     {
@@ -148,6 +148,5 @@
       "gusmester": "Thomas Frank",
       "availability": 30
     }
-  ],
-  "message": "Address unavailable: https://api.bookspot.io/api/guest/v3/products/17018/start-time-prices?durationId=8095&participants=1&key=b16c2784ae1c6119c4a7a558a709d9a4dbe92d8acb618d86a79047fe93509d3d&startDate=2026-09-09&startTime=18%3A00&endDate=2026-09-09&endTime=19%3A15&availability=30&min=1&capacity=30"
+  ]
 }
