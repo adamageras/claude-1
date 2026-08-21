@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-08-21T22:49:12.631Z",
-  "sourceUpdatedAt": "2026-08-21T22:25:49.796Z",
-  "status": "stale",
+  "updatedAt": "2026-08-21T23:18:48.792Z",
+  "sourceUpdatedAt": "2026-08-21T23:10:52.805Z",
+  "status": "ok",
   "count": 18,
   "items": [
     {
@@ -148,6 +148,5 @@
       "gusmester": "Gusmester Mads Gøthler",
       "availability": 30
     }
-  ],
-  "message": "Address unavailable: https://api.bookspot.io/api/guest/v3/available-products?startDate=&startTime=&endDate=&endTime=&participants=1&duration=0&durationId=0&quantity=0&key=b16c2784ae1c6119c4a7a558a709d9a4dbe92d8acb618d86a79047fe93509d3d&addon=0&categories%5B%5D=2233"
+  ]
 }
