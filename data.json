@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-21T12:37:46.394Z",
-  "sourceUpdatedAt": "2026-08-21T12:25:51.383Z",
+  "updatedAt": "2026-08-21T13:41:05.469Z",
+  "sourceUpdatedAt": "2026-08-21T13:40:53.747Z",
   "status": "ok",
   "count": 18,
   "items": [
@@ -82,7 +82,7 @@
       "endTime": "19:15",
       "product": "Sauna Gus (CALM) - Horizon",
       "gusmester": "Gusmester Stine Harboe Petersen",
-      "availability": 16
+      "availability": 15
     },
     {
       "date": "2026-09-08",
