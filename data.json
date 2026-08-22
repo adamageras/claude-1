@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-08-22T23:16:34.077Z",
-  "sourceUpdatedAt": "2026-08-22T23:10:54.523Z",
-  "status": "ok",
+  "updatedAt": "2026-08-22T23:43:31.603Z",
+  "sourceUpdatedAt": "2026-08-22T23:25:57.911Z",
+  "status": "stale",
   "count": 19,
   "items": [
     {
@@ -156,5 +156,6 @@
       "gusmester": "Andreas Krabholm",
       "availability": 30
     }
-  ]
+  ],
+  "message": "Address unavailable: https://api.bookspot.io/api/guest/v3/products/17016/availability?key=b16c2784ae1c6119c4a7a558a709d9a4dbe92d8acb618d86a79047fe93509d3d&fromDate=2026-08-23&toDate=2026-09-22&durationId=8095&rentalProductId=17016&participants=1"
 }
