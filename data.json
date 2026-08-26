@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-26T16:14:08.440Z",
-  "sourceUpdatedAt": "2026-08-26T16:10:50.600Z",
+  "updatedAt": "2026-08-26T18:12:13.755Z",
+  "sourceUpdatedAt": "2026-08-26T18:10:51.144Z",
   "status": "ok",
   "count": 15,
   "items": [
@@ -18,7 +18,7 @@
       "endTime": "19:15",
       "product": "Sauna Gus (CALM) - Horizon",
       "gusmester": "Gretha Storm",
-      "availability": 14
+      "availability": 13
     },
     {
       "date": "2026-09-01",
